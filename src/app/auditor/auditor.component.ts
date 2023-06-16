@@ -72,9 +72,12 @@ export class AuditorComponent implements OnInit{
 
   copyMessage() {
     console.log(this.textMessage);
-    this.textMessage.nativeElement.select();
-    document.execCommand('copy');
-    this.textMessage.nativeElement.setSelectionRange(0, 0);
+    setTimeout(() => {
+      this.textMessage.nativeElement.select();
+      document.execCommand('copy');
+      this.textMessage.nativeElement.setSelectionRange(0, 0);
+    }, 100);
+    
   }
 }
 
