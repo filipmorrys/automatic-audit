@@ -1,33 +1,40 @@
-<form action="">
-    <div class="formcontrol">
-        <label for="circualtionId">Circulation Id</label>
-        <input type="text" name="circualtionId" id="circualtionId" [(ngModel)]="circulationId">
-    </div>
-    <div class="formcontrol">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{ message }}</textarea>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>TRAIN DETECTOR</th>
-                <th>EVENT TYPE</th>
-                <th>TCZ</th>
-                <th>NODE</th>
-                <th>DIRECTION</th>
-                <th>ACTION</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let tc of trackCircuits; let i = index">
-                <td>{{ tc.trainDetectorMnemonic }}</td>
-                <td>{{ tc.type }}</td>
-                <td>{{ tc.tczName }}</td>
-                <td>{{ tc.nodeName }}</td>
-                <td>{{ tc.direction }}</td>
-                <td><a href="#" (click)="setPosition(i)">Copy</a></td>
-            </tr>
-        </tbody>
+<div class="content">
+    <div class="table-events">
+        <table>
+            <thead>
+                <tr>
+                    <th>TRAIN DETECTOR</th>
+                    <th>EVENT TYPE</th>
+                    <th>TCZ</th>
+                    <th>NODE</th>
+                    <th>DIRECTION</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tc of trackCircuits; let i = index">
+                    <td>{{ tc.trainDetectorMnemonic }}</td>
+                    <td>{{ tc.type }}</td>
+                    <td>{{ tc.tczName }}</td>
+                    <td>{{ tc.nodeName }}</td>
+                    <td>{{ tc.direction }}</td>
+                    <td>
+                        <a href="#" (click)="setPosition(i)">Copy</a>
+                    </td>
+                </tr>
+            </tbody>
 
-    </table>
-</form>
+        </table>
+    </div>
+    <div class="audit-message">
+        <div class="formcontrol">
+            <label for="circualtionId">Circulation Id</label>
+            <input type="text" name="circualtionId" id="circualtionId" [(ngModel)]="circulationId">
+        </div>
+        <div class="formcontrol">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{ message }}</textarea>
+        </div>
+
+    </div>
+</div>
