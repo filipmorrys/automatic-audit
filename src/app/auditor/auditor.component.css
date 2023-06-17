@@ -1,10 +1,15 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma;
     font-size: small;
 }
 
 th, td {
     border: 1px solid black;
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: antiquewhite;
 }
 
 th {
@@ -20,4 +25,14 @@ input {
 textarea {
     display: block;
     min-width: 300px;
+}
+
+.content {
+    position: relative;
+}
+
+.audit-message {
+    position: fixed;
+    top: 10px;
+    right: 0px;
 }
