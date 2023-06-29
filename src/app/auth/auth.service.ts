@@ -5,8 +5,8 @@ import { Observable, catchError, tap, throwError } from 'rxjs';
 import { TokenService } from './token.service';
 
 
-const OAUTH_CLIENT = 'express-client';
-const OAUTH_SECRET = 'express-secret';
+const OAUTH_CLIENT = 'frontend-security';
+const OAUTH_SECRET = 'bf89a5b8-a123-4eb4-a6c7-29400ed0bee5';
 const API_URL = 'https://opefrvtms-dev-keycloak.apps.k8s.mova.indra.es/auth/realms/RealmSecurity/protocol/openid-connect/auth';
 
 
