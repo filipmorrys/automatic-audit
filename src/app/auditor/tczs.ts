@@ -1,11 +1,11 @@
 export const TCZS = [
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "b445f5d8-52c4-30dd-ab5c-5f9656f388a4",
 		"mnemonic": "TCZ.T001-RUUSA_55km_2km",
 		"name": "Ruusa55",
 		"shortName": "RUUS55",
-		"code": "085011",
+		"code": "085030",
 		"nodeId": "1806cb20-1110-3213-8244-1781540db58e",
 		"controlPoints": [
 			{
@@ -23,12 +23,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "9fd06dae-ebd4-3bed-8539-f97cc019a67e",
 		"mnemonic": "TCZ.T001-VASTSE-KUUSTE_29km_5pk",
 		"name": "Vastse-Kuuste29",
 		"shortName": "VAKU-29",
-		"code": "084947",
+		"code": "084945",
 		"nodeId": "cbf49637-a1ab-31c0-8cf4-593f97c080bf",
 		"controlPoints": [
 			{
@@ -46,12 +46,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "bdead4b4-dcb8-34dc-a111-eff0bb1cb33d",
 		"mnemonic": "TCZ.T001-KIKKA_64km_3pk",
 		"name": "Kiika64",
 		"shortName": "KIKK64",
-		"code": "085103",
+		"code": "085113",
 		"nodeId": "eb6991bd-69ac-390f-9595-089415d30e99",
 		"controlPoints": [
 			{
@@ -69,7 +69,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "e12c72ea-74d1-3172-abdf-94d47a585ebe",
 		"mnemonic": "TCZ.T001-VANK",
 		"name": "Vana-Kuuste",
@@ -92,7 +92,7 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "e15c7a90-4714-37b3-afa6-5feec29d20b1",
 		"mnemonic": "TCZ.T001-ILUM",
 		"name": "Ilumetsa",
@@ -115,12 +115,12 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "13994c20-36fc-3463-a7a2-5ae6d0bca521",
 		"mnemonic": "TCZ.T001-VER",
 		"name": "Veriora",
 		"shortName": "VER",
-		"code": "085102.2",
+		"code": "085102.1",
 		"nodeId": "82c6a023-7882-3101-945c-d2e58043b4ab",
 		"controlPoints": [
 			{
@@ -133,6 +133,17 @@ export const TCZS = [
 				"edgePosition": 322.99967,
 				"edgeId": "AT.T001-VER2",
 				"edgeLength": 343.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-VER-V4",
+				"tcpUUID": "9bff3ca1-dbd9-3b40-b281-29a117497800",
+				"tcz": "TCZ.T001-VER",
+				"name": "VER",
+				"longName": "Veriora",
+				"isStopAllowed": false,
+				"edgePosition": 207.9985,
+				"edgeId": "AT.T001-VER6",
+				"edgeLength": 530.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-VER-V2",
@@ -155,28 +166,17 @@ export const TCZS = [
 				"edgePosition": 263.99572,
 				"edgeId": "AT.T001-VER8B",
 				"edgeLength": 1114.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-VER-V4",
-				"tcpUUID": "9bff3ca1-dbd9-3b40-b281-29a117497800",
-				"tcz": "TCZ.T001-VER",
-				"name": "VER",
-				"longName": "Veriora",
-				"isStopAllowed": false,
-				"edgePosition": 207.9985,
-				"edgeId": "AT.T001-VER6",
-				"edgeLength": 530.0
 			}
 		],
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "45d5f57a-6b95-3d53-9e86-b5af6e4ca970",
 		"mnemonic": "TCZ.T001-VAKU",
 		"name": "Vastse-Kuuste",
 		"shortName": "VAKU",
-		"code": "084947",
+		"code": "084947.1",
 		"nodeId": "cbf49637-a1ab-31c0-8cf4-593f97c080bf",
 		"controlPoints": [
 			{
@@ -216,12 +216,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "c91f444a-a91b-3643-924b-930683cf09f9",
 		"mnemonic": "TCZ.T001-TART",
 		"name": "Tartu",
 		"shortName": "TART",
-		"code": "084805",
+		"code": "084805.1",
 		"nodeId": "0c0df3a1-6809-365a-baa7-9955503fa667",
 		"controlPoints": [
 			{
@@ -239,12 +239,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "e2c4d5ab-d4d0-33bb-b011-6aa1ff476426",
 		"mnemonic": "TCZ.T001-REBASE_18km_5pk",
 		"name": "Rebase18",
 		"shortName": "REBA18",
-		"code": "084911",
+		"code": "084922",
 		"nodeId": "41861841-8027-3b10-a597-f6baccab40d4",
 		"controlPoints": [
 			{
@@ -262,12 +262,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "4e54081c-bf6c-39ac-8754-27bd530910fe",
 		"mnemonic": "TCZ.T001-ORAVA_74km_2pk",
 		"name": "Orava74",
 		"shortName": "ORAV-74",
-		"code": "085121.2",
+		"code": "085123",
 		"nodeId": "084b2fab-4592-34c0-9dbf-b141fde5faba",
 		"controlPoints": [
 			{
@@ -285,7 +285,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "5f979cde-301d-34e9-9c18-78038da78f74",
 		"mnemonic": "TCZ.T001-UHTI",
 		"name": "Uhti",
@@ -308,25 +308,14 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "5addd1cc-3c96-3f6e-87db-c37b4541ecb7",
 		"mnemonic": "TCZ.T001-POLV",
 		"name": "Põlva",
 		"shortName": "POLV",
-		"code": "085009.2",
+		"code": "085009.1",
 		"nodeId": "ee2f79cf-e12a-3ee6-ad4b-81ede08f38a1",
 		"controlPoints": [
-			{
-				"tcpMnemonic": "TCP.T001-POLV-V1",
-				"tcpUUID": "2441c9cc-3d15-33c0-af71-80f4801944ad",
-				"tcz": "TCZ.T001-POLV",
-				"name": "POLV",
-				"longName": "Põlva",
-				"isStopAllowed": true,
-				"edgePosition": 466.00105,
-				"edgeId": "AT.T001-POLV15",
-				"edgeLength": 535.0
-			},
 			{
 				"tcpMnemonic": "TCP.T001-POLV-V2",
 				"tcpUUID": "d393a8ed-222b-3e08-8ed2-083da3f0517e",
@@ -361,17 +350,6 @@ export const TCZS = [
 				"edgeLength": 583.0
 			},
 			{
-				"tcpMnemonic": "TCP.T001-POLV-V5",
-				"tcpUUID": "8df7cff5-c69b-3c51-9ccf-bcf61cf5d2f1",
-				"tcz": "TCZ.T001-POLV",
-				"name": "POLV",
-				"longName": "Põlva",
-				"isStopAllowed": false,
-				"edgePosition": 183.00009,
-				"edgeId": "AT.T001-POLV17",
-				"edgeLength": 273.0
-			},
-			{
 				"tcpMnemonic": "TCP.T001-POLV-V6",
 				"tcpUUID": "e47a1844-fd66-3bda-b28a-6711f6f4ccd9",
 				"tcz": "TCZ.T001-POLV",
@@ -381,17 +359,39 @@ export const TCZS = [
 				"edgePosition": 282.99986,
 				"edgeId": "AT.T001-POLV13B",
 				"edgeLength": 583.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-POLV-V1",
+				"tcpUUID": "2441c9cc-3d15-33c0-af71-80f4801944ad",
+				"tcz": "TCZ.T001-POLV",
+				"name": "POLV",
+				"longName": "Põlva",
+				"isStopAllowed": true,
+				"edgePosition": 466.00105,
+				"edgeId": "AT.T001-POLV15",
+				"edgeLength": 535.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-POLV-V5",
+				"tcpUUID": "8df7cff5-c69b-3c51-9ccf-bcf61cf5d2f1",
+				"tcz": "TCZ.T001-POLV",
+				"name": "POLV",
+				"longName": "Põlva",
+				"isStopAllowed": false,
+				"edgePosition": 183.00009,
+				"edgeId": "AT.T001-POLV17",
+				"edgeLength": 273.0
 			}
 		],
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "e0e3efe6-29eb-3701-b1a7-1bba4276d6ad",
 		"mnemonic": "TCZ.T001-LANGE_9km_5pk",
 		"name": "Lange9",
 		"shortName": "LANG9",
-		"code": "084807",
+		"code": "084861",
 		"nodeId": "1cd1c545-a14b-3267-a295-795280510a79",
 		"controlPoints": [
 			{
@@ -409,7 +409,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "973d9976-d668-3258-a99c-a58512a1cd85",
 		"mnemonic": "TCZ.T001-TAEV",
 		"name": "Taevaskoja",
@@ -432,7 +432,7 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "8d25facb-29b5-3894-abd7-69a91d42e8bb",
 		"mnemonic": "TCZ.T001-HOLV",
 		"name": "Holvandi",
@@ -455,25 +455,14 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "24812122-e379-3bca-9d4a-3e01f4e09950",
 		"mnemonic": "TCZ.T001-REOL",
 		"name": "Reola",
 		"shortName": "REOL",
-		"code": "084909",
+		"code": "084909.1",
 		"nodeId": "6ab9f197-a979-3615-ad50-e4a468f68d95",
 		"controlPoints": [
-			{
-				"tcpMnemonic": "TCP.T001-REOL-V1",
-				"tcpUUID": "35987c8c-264c-32a9-83aa-47234e378206",
-				"tcz": "TCZ.T001-REOL",
-				"name": "REOL",
-				"longName": "Reola",
-				"isStopAllowed": true,
-				"edgePosition": 226.00048,
-				"edgeId": "AT.T001-REOL7",
-				"edgeLength": 848.0
-			},
 			{
 				"tcpMnemonic": "TCP.T001-REOL-V2",
 				"tcpUUID": "af47d0ed-aaf6-30fb-9851-1eb8955631e7",
@@ -484,6 +473,17 @@ export const TCZS = [
 				"edgePosition": 563.00535,
 				"edgeId": "AT.T001-REOL3",
 				"edgeLength": 1185.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-REOL-V1",
+				"tcpUUID": "35987c8c-264c-32a9-83aa-47234e378206",
+				"tcz": "TCZ.T001-REOL",
+				"name": "REOL",
+				"longName": "Reola",
+				"isStopAllowed": true,
+				"edgePosition": 226.00048,
+				"edgeId": "AT.T001-REOL7",
+				"edgeLength": 848.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-REOL-V3",
@@ -533,7 +533,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "684d83ac-d900-33eb-b768-bf03e13a5a3b",
 		"mnemonic": "TCZ.T001-KIRS",
 		"name": "Kirsi",
@@ -556,12 +556,12 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "b8a0cea8-6556-3aef-966e-330a7a1474e4",
 		"mnemonic": "TCZ.T001-PETS",
 		"name": "Petseri",
 		"shortName": "PETS",
-		"code": "087005",
+		"code": "087005.1",
 		"nodeId": "9cf33885-01bd-38b7-b42f-8649b4e1a7f7",
 		"controlPoints": [
 			{
@@ -579,12 +579,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "63ae0f45-67d6-31e2-b584-f9d764244ddd",
 		"mnemonic": "TCZ.T001-KIIDJARVE_35km_1pk",
 		"name": "Kiidjärve35",
 		"shortName": "KIID35",
-		"code": "084949",
+		"code": "084964",
 		"nodeId": "bd7849d9-12a5-3328-9e33-9b9df83131b3",
 		"controlPoints": [
 			{
@@ -602,12 +602,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "4a62c3ca-977c-3dc3-a85e-2ba69397eaf8",
 		"mnemonic": "TCZ.T001-VANA-KUUSTE_16km_10pk",
 		"name": "Vana-Kuuste16",
 		"shortName": "VANK16",
-		"code": "084910",
+		"code": "084915",
 		"nodeId": "c6dcdab8-3ee4-3fa0-b163-f574af23a6ff",
 		"controlPoints": [
 			{
@@ -625,7 +625,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "f82c5149-dcdb-3340-b7bc-b21da4e3001a",
 		"mnemonic": "TCZ.T001-ORAV",
 		"name": "Orava",
@@ -634,15 +634,15 @@ export const TCZS = [
 		"nodeId": "084b2fab-4592-34c0-9dbf-b141fde5faba",
 		"controlPoints": [
 			{
-				"tcpMnemonic": "TCP.T001-ORAV-V3",
-				"tcpUUID": "351187f6-b72e-3122-bc41-ac182002051f",
+				"tcpMnemonic": "TCP.T001-ORAV-V2",
+				"tcpUUID": "32c48f9f-ad13-3bfb-90da-bfb3b92439a6",
 				"tcz": "TCZ.T001-ORAV",
 				"name": "ORAV",
 				"longName": "Orava",
 				"isStopAllowed": true,
-				"edgePosition": 661.99518,
-				"edgeId": "AT.T001-ORA10",
-				"edgeLength": 1098.0
+				"edgePosition": 612.9972,
+				"edgeId": "AT.T001-ORA3",
+				"edgeLength": 1055.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-ORAV-V1",
@@ -656,17 +656,6 @@ export const TCZS = [
 				"edgeLength": 993.0
 			},
 			{
-				"tcpMnemonic": "TCP.T001-ORAV-V2",
-				"tcpUUID": "32c48f9f-ad13-3bfb-90da-bfb3b92439a6",
-				"tcz": "TCZ.T001-ORAV",
-				"name": "ORAV",
-				"longName": "Orava",
-				"isStopAllowed": true,
-				"edgePosition": 612.9972,
-				"edgeId": "AT.T001-ORA3",
-				"edgeLength": 1055.0
-			},
-			{
 				"tcpMnemonic": "TCP.T001-ORAV-V4",
 				"tcpUUID": "fd9ffd76-4451-3eac-9f7c-5b26e8267623",
 				"tcz": "TCZ.T001-ORAV",
@@ -676,6 +665,17 @@ export const TCZS = [
 				"edgePosition": 34.99985,
 				"edgeId": "AT.T001-ORA8",
 				"edgeLength": 223.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-ORAV-V3",
+				"tcpUUID": "351187f6-b72e-3122-bc41-ac182002051f",
+				"tcz": "TCZ.T001-ORAV",
+				"name": "ORAV",
+				"longName": "Orava",
+				"isStopAllowed": true,
+				"edgePosition": 661.99518,
+				"edgeId": "AT.T001-ORA10",
+				"edgeLength": 1098.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-ORAV-V5",
@@ -703,7 +703,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "6fc9db5f-cc77-3214-b1ba-323630a8da5f",
 		"mnemonic": "TCZ.T001-KIID",
 		"name": "Kiidjärve",
@@ -726,12 +726,12 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "6d4f92a2-f983-3f53-97da-a0f86357e3fc",
 		"mnemonic": "TCZ.T001-TAEVASKOJA_38km_10pk",
 		"name": "Taevaskoja38",
 		"shortName": "TAEV38",
-		"code": "084950",
+		"code": "084975",
 		"nodeId": "3156f39a-870d-304d-b5b0-6caf31022266",
 		"controlPoints": [
 			{
@@ -749,7 +749,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "324dfce4-13db-3a67-b70c-d0006e2e653d",
 		"mnemonic": "TCZ.T001-REBA",
 		"name": "Rebase",
@@ -772,12 +772,12 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "b545ecb7-ca57-385e-808c-afe679569acf",
 		"mnemonic": "TCZ.T001-HOLVANDI_50_km_4pk",
 		"name": "Holvandi50",
 		"shortName": "HOLV50",
-		"code": "085010",
+		"code": "085011",
 		"nodeId": "aba96bdb-5f9f-31ac-bb8d-72c6bddb0d50",
 		"controlPoints": [
 			{
@@ -795,25 +795,14 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "2694b29d-4be5-3031-82da-24efd1826851",
 		"mnemonic": "TCZ.T001-POLVA_43km_7pk",
 		"name": "Põlva43",
 		"shortName": "POLV-43",
-		"code": "085009.1",
+		"code": "085007",
 		"nodeId": "ee2f79cf-e12a-3ee6-ad4b-81ede08f38a1",
 		"controlPoints": [
-			{
-				"tcpMnemonic": "TCP.T001-POLVA_43km_7pk_3",
-				"tcpUUID": "c6d7be4b-c1ad-3f10-a334-d82280d6b3a7",
-				"tcz": "TCZ.T001-POLVA_43km_7pk",
-				"name": "POLV-43",
-				"longName": "Põlva43",
-				"isStopAllowed": false,
-				"edgePosition": 49.00009,
-				"edgeId": "AT.T001-POLV6",
-				"edgeLength": 59.0
-			},
 			{
 				"tcpMnemonic": "TCP.T001-POLVA_43km_7pk_2",
 				"tcpUUID": "ecb703a0-447b-3415-9d8b-78adfbf2a89b",
@@ -824,6 +813,17 @@ export const TCZS = [
 				"edgePosition": 48.99873,
 				"edgeId": "AT.T001-POLV3",
 				"edgeLength": 1221.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-POLVA_43km_7pk_3",
+				"tcpUUID": "c6d7be4b-c1ad-3f10-a334-d82280d6b3a7",
+				"tcz": "TCZ.T001-POLVA_43km_7pk",
+				"name": "POLV-43",
+				"longName": "Põlva43",
+				"isStopAllowed": false,
+				"edgePosition": 49.00009,
+				"edgeId": "AT.T001-POLV6",
+				"edgeLength": 59.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-POLVA_43km_7pk_1",
@@ -840,25 +840,14 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
 		"mnemonic": "TCZ.T001-KOID",
 		"name": "Koidula",
 		"shortName": "KOID",
-		"code": "087004",
+		"code": "087004.1",
 		"nodeId": "19b899f7-19c0-3063-8c46-a6c540e0bd37",
 		"controlPoints": [
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V1",
-				"tcpUUID": "d38c0071-ec84-397b-9e08-52f50cb76328",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": true,
-				"edgePosition": 779.9984,
-				"edgeId": "AT.T001-KOID25",
-				"edgeLength": 1648.0
-			},
 			{
 				"tcpMnemonic": "TCP.T001-KOID-V2",
 				"tcpUUID": "3eec76c0-6e3f-397a-a5bc-d2ee9c73a40e",
@@ -871,15 +860,15 @@ export const TCZS = [
 				"edgeLength": 677.0
 			},
 			{
-				"tcpMnemonic": "TCP.T001-KOID-V3",
-				"tcpUUID": "c649440c-374f-3060-93f2-6b2d6d1fceb4",
+				"tcpMnemonic": "TCP.T001-KOID-V10",
+				"tcpUUID": "ef4321b1-aaa6-3ecc-a1f5-f279aa19c7d6",
 				"tcz": "TCZ.T001-KOID",
 				"name": "KOID",
 				"longName": "Koidula",
 				"isStopAllowed": true,
-				"edgePosition": 1026.00118,
-				"edgeId": "AT.T001-KOID49",
-				"edgeLength": 1646.0
+				"edgePosition": 212.00255,
+				"edgeId": "AT.T001-KOID7B",
+				"edgeLength": 677.0
 			},
 			{
 				"tcpMnemonic": "TCP.T001-KOID-V4",
@@ -890,6 +879,83 @@ export const TCZS = [
 				"isStopAllowed": true,
 				"edgePosition": 1103.00106,
 				"edgeId": "AT.T001-KOID20",
+				"edgeLength": 1646.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V1",
+				"tcpUUID": "d38c0071-ec84-397b-9e08-52f50cb76328",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": true,
+				"edgePosition": 779.9984,
+				"edgeId": "AT.T001-KOID25",
+				"edgeLength": 1648.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V15",
+				"tcpUUID": "61ec2db4-dc9f-380f-8176-69d90ba848fe",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": false,
+				"edgePosition": 299.99935,
+				"edgeId": "AT.T001-KOID30",
+				"edgeLength": 449.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V13",
+				"tcpUUID": "c860d5e2-a5da-3f3f-b3fe-7500877ad858",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": false,
+				"edgePosition": 222.999,
+				"edgeId": "AT.T001-KOID35",
+				"edgeLength": 287.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V11",
+				"tcpUUID": "95d085d5-4365-3a5a-8caf-9d7a5a3e8a13",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": false,
+				"edgePosition": 146.00033,
+				"edgeId": "AT.T001-KOID40",
+				"edgeLength": 199.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V12",
+				"tcpUUID": "4139b16a-4cf9-3634-ae8b-cfc6bfc9aaff",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": false,
+				"edgePosition": 146.00033,
+				"edgeId": "AT.T001-KOID41",
+				"edgeLength": 199.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V14",
+				"tcpUUID": "8dc54ac7-8103-3611-ba68-05479412f795",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": false,
+				"edgePosition": 139.9996,
+				"edgeId": "AT.T001-KOID43",
+				"edgeLength": 190.0
+			},
+			{
+				"tcpMnemonic": "TCP.T001-KOID-V3",
+				"tcpUUID": "c649440c-374f-3060-93f2-6b2d6d1fceb4",
+				"tcz": "TCZ.T001-KOID",
+				"name": "KOID",
+				"longName": "Koidula",
+				"isStopAllowed": true,
+				"edgePosition": 1026.00118,
+				"edgeId": "AT.T001-KOID49",
 				"edgeLength": 1646.0
 			},
 			{
@@ -946,83 +1012,17 @@ export const TCZS = [
 				"edgePosition": 780.00688,
 				"edgeId": "AT.T001-KOID57",
 				"edgeLength": 1766.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V10",
-				"tcpUUID": "ef4321b1-aaa6-3ecc-a1f5-f279aa19c7d6",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": true,
-				"edgePosition": 212.00255,
-				"edgeId": "AT.T001-KOID7B",
-				"edgeLength": 677.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V11",
-				"tcpUUID": "95d085d5-4365-3a5a-8caf-9d7a5a3e8a13",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": false,
-				"edgePosition": 146.00033,
-				"edgeId": "AT.T001-KOID40",
-				"edgeLength": 199.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V12",
-				"tcpUUID": "4139b16a-4cf9-3634-ae8b-cfc6bfc9aaff",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": false,
-				"edgePosition": 146.00033,
-				"edgeId": "AT.T001-KOID41",
-				"edgeLength": 199.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V13",
-				"tcpUUID": "c860d5e2-a5da-3f3f-b3fe-7500877ad858",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": false,
-				"edgePosition": 222.999,
-				"edgeId": "AT.T001-KOID35",
-				"edgeLength": 287.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V14",
-				"tcpUUID": "8dc54ac7-8103-3611-ba68-05479412f795",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": false,
-				"edgePosition": 139.9996,
-				"edgeId": "AT.T001-KOID43",
-				"edgeLength": 190.0
-			},
-			{
-				"tcpMnemonic": "TCP.T001-KOID-V15",
-				"tcpUUID": "61ec2db4-dc9f-380f-8176-69d90ba848fe",
-				"tcz": "TCZ.T001-KOID",
-				"name": "KOID",
-				"longName": "Koidula",
-				"isStopAllowed": false,
-				"edgePosition": 299.99935,
-				"edgeId": "AT.T001-KOID30",
-				"edgeLength": 449.0
 			}
 		],
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "a3f9012f-4756-368a-8e53-3eea12fb0c32",
 		"mnemonic": "TCZ.T001-AARDLAKOID_3km_4pk",
 		"name": "AardlaKoid3",
 		"shortName": "AARDKOID3",
-		"code": "084806",
+		"code": "084831",
 		"nodeId": "fdf0afd0-9f3d-36bb-8883-5da286e9f470",
 		"controlPoints": [
 			{
@@ -1040,12 +1040,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "3476cd54-9495-3cf2-bc32-e85f35b37d54",
 		"mnemonic": "TCZ.T001-LAANE_24km_6pk",
 		"name": "Laane24",
 		"shortName": "LAAN24",
-		"code": "084912",
+		"code": "084934",
 		"nodeId": "d26a7887-85cd-3312-9122-c386148bda40",
 		"controlPoints": [
 			{
@@ -1063,7 +1063,7 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "faec006a-62a8-3093-ad41-e30d59e22928",
 		"mnemonic": "TCZ.T001-YLEN",
 		"name": "Ülenurme",
@@ -1086,7 +1086,7 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "3b2d9051-cd44-3f95-b681-f44b2a6eff60",
 		"mnemonic": "TCZ.T001-VALM",
 		"name": "Valgemetsa",
@@ -1109,7 +1109,7 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "ade5c54b-5bb0-306c-8855-18afbf81cdf1",
 		"mnemonic": "TCZ.T001-RUUS",
 		"name": "Ruusa",
@@ -1132,12 +1132,12 @@ export const TCZS = [
 		"type": "ARC"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "419e8590-e186-3612-9253-8d7b23537327",
 		"mnemonic": "TCZ.T001-VALGEMETSA_32km_7pk",
 		"name": "Valgemetsa32",
 		"shortName": "VALM32",
-		"code": "084948",
+		"code": "084952",
 		"nodeId": "5ff14585-ce38-317c-956e-0970df2a5b93",
 		"controlPoints": [
 			{
@@ -1155,12 +1155,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "6638fd59-eba0-3996-952e-756c98c24c4a",
 		"mnemonic": "TCZ.T001-VERIORA_61km_4pk",
 		"name": "Veriora61",
 		"shortName": "VER-61",
-		"code": "085102.1",
+		"code": "085104",
 		"nodeId": "82c6a023-7882-3101-945c-d2e58043b4ab",
 		"controlPoints": [
 			{
@@ -1178,12 +1178,12 @@ export const TCZS = [
 		"type": "NODE"
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "3fcd15bb-7e10-3aa6-8a5f-ea19a823cbf8",
 		"mnemonic": "TCZ.T001-ILUMETSA_67km_2pk",
 		"name": "Ilumetsa67",
 		"shortName": "ILUM67",
-		"code": "085104",
+		"code": "085118",
 		"nodeId": "4c30c41a-e995-3b4e-b266-5e271a102915",
 		"controlPoints": [
 			{

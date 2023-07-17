@@ -1,6 +1,6 @@
 export const TRACK_CIRCUITS = [
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "86b8abb5-b791-3ad9-a83e-45461c7e6683",
@@ -21,7 +21,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANA-KUUSTE_16km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a512d15a-7a53-3c7a-8a33-73389019941a",
@@ -42,7 +42,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "978653c9-0f72-3d72-9ce3-6bd0ea35e166",
@@ -63,7 +63,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VALGEMETSA_32km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "2eed6383-7788-3a10-8c99-e35774863c9d",
@@ -84,7 +84,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "13c7efaf-aca4-36df-9b01-d4e6346bf6ba",
@@ -105,7 +105,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "1a9d2679-29b6-3053-8687-2d7787ca9656",
@@ -126,7 +126,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b2cd1d38-c0f6-38e8-9f72-825d06a2025d",
@@ -147,7 +147,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-RUUS"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b779dbb4-d727-3f9b-b07b-f0eaaa94bf04",
@@ -168,7 +168,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIIDJARVE_35km_1pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "6737704c-5ff0-3060-b8ba-7aa17f74653b",
@@ -189,7 +189,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b41ef848-e925-3c1f-b1e2-59823869e257",
@@ -210,7 +210,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-RUUSA_55km_2km"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "33f6b757-9471-3a66-8f2f-c7b311e1c4a5",
@@ -231,28 +231,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "90393a7a-1a8e-3c3a-b50d-62b0781e4c5d",
-        "mnemonic": "TE.T001-KOID-V4.1",
-        "name": "TE.T001-KOID-V4.1",
-        "longName": "TE.T001-KOID-V4.1",
-        "direction": "EVEN",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "965a32ef-b6ea-3a61-b0e8-9b13a7ca1d61",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-28-30R",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "ecf1bfa6-80fe-3d1b-aca6-2d5eb2f88ec6",
@@ -273,7 +252,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "90393a7a-1a8e-3c3a-b50d-62b0781e4c5d",
+        "mnemonic": "TE.T001-KOID-V4.1",
+        "name": "TE.T001-KOID-V4.1",
+        "longName": "TE.T001-KOID-V4.1",
+        "direction": "EVEN",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "965a32ef-b6ea-3a61-b0e8-9b13a7ca1d61",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-28-30R",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "66ae0704-74d4-398c-b080-80a1e99aa3b6",
@@ -294,7 +294,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "79ee5cfe-d15a-37ce-a9d9-45a326480968",
@@ -315,49 +315,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "4249d95d-8f5e-3921-8cc1-9a87599f3088",
-        "mnemonic": "TE.T001-POLV-LC42679-V3",
-        "name": "TE.T001-POLV-LC42679-V3",
-        "longName": "TE.T001-POLV-LC42679-V3",
-        "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "22b1fd59-8bf4-3850-bcf2-f37fb82fb83d",
-        "trainDetectorMnemonic": "CV.ER-REOL-POLV-6R",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
-        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "7bab4382-1451-3ece-a609-8b8040ea5a3c",
-        "mnemonic": "TE.T001-KIRS-V1.2",
-        "name": "TE.T001-KIRS-V1.2",
-        "longName": "TE.T001-KIRS-V1.2",
-        "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
-        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "684d83ac-d900-33eb-b768-bf03e13a5a3b",
-        "tczMnemonic": "TCZ.T001-KIRS"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "44ca64ac-2f10-3255-bd55-aeea57731f21",
@@ -378,7 +336,49 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "7bab4382-1451-3ece-a609-8b8040ea5a3c",
+        "mnemonic": "TE.T001-KIRS-V1.2",
+        "name": "TE.T001-KIRS-V1.2",
+        "longName": "TE.T001-KIRS-V1.2",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
+        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "684d83ac-d900-33eb-b768-bf03e13a5a3b",
+        "tczMnemonic": "TCZ.T001-KIRS"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "4249d95d-8f5e-3921-8cc1-9a87599f3088",
+        "mnemonic": "TE.T001-POLV-LC42679-V3",
+        "name": "TE.T001-POLV-LC42679-V3",
+        "longName": "TE.T001-POLV-LC42679-V3",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "22b1fd59-8bf4-3850-bcf2-f37fb82fb83d",
+        "trainDetectorMnemonic": "CV.ER-REOL-POLV-6R",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
+        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "849e0c80-6227-3f9e-b30c-dbb2bef1911e",
@@ -399,7 +399,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5c00b911-ffd7-3ad5-b02d-3b899dd890bf",
@@ -420,28 +420,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-YLEN"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "44fa54d5-8e4d-3a2a-a0f8-ed2dbe9666ad",
-        "mnemonic": "TE.T001-KIRS-V1",
-        "name": "TE.T001-KIRS-V1",
-        "longName": "TE.T001-KIRS-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
-        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
-        "circulationTrack": "36464795-40b8-3f28-abd8-ab23daf07525",
-        "circulationTrackMnemonic": "TCK.ER-T001-TART-AARDKOID3-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "684d83ac-d900-33eb-b768-bf03e13a5a3b",
-        "tczMnemonic": "TCZ.T001-KIRS"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "baf54354-3e7d-3b71-8f68-6d1827407961",
@@ -462,7 +441,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LANGE_9km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "44fa54d5-8e4d-3a2a-a0f8-ed2dbe9666ad",
+        "mnemonic": "TE.T001-KIRS-V1",
+        "name": "TE.T001-KIRS-V1",
+        "longName": "TE.T001-KIRS-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
+        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
+        "circulationTrack": "36464795-40b8-3f28-abd8-ab23daf07525",
+        "circulationTrackMnemonic": "TCK.ER-T001-TART-AARDKOID3-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "684d83ac-d900-33eb-b768-bf03e13a5a3b",
+        "tczMnemonic": "TCZ.T001-KIRS"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "15638f4c-691e-341e-ae98-7c18879e264f",
@@ -483,7 +483,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "d85c526e-99e3-3895-974f-6f61c3edd79c",
@@ -504,28 +504,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "9e3675d1-3be8-375a-8ecb-0deaa44848c6",
-        "mnemonic": "TE.T001-RUUSA 55 km 2 km-km",
-        "name": "TE.T001-RUUSA 55 km 2 km-km",
-        "longName": "TE.T001-RUUSA 55 km 2 km-km",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "0e3c9f35-d4ba-3300-8d00-661766dc1d19",
-        "trainDetectorMnemonic": "CV.ER-ORAV-POLV_VER",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "f68a9eb9-5f1a-3c51-a216-b0cbf0cc153d",
-        "stationingTrackMnemonic": "TCK.ER-T001-RUUSA_55km_2km-V1",
-        "tcz": "b445f5d8-52c4-30dd-ab5c-5f9656f388a4",
-        "tczMnemonic": "TCZ.T001-RUUSA_55km_2km"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b29d15a9-39d9-3e47-96c7-41f359676184",
@@ -546,7 +525,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "9e3675d1-3be8-375a-8ecb-0deaa44848c6",
+        "mnemonic": "TE.T001-RUUSA 55 km 2 km-km",
+        "name": "TE.T001-RUUSA 55 km 2 km-km",
+        "longName": "TE.T001-RUUSA 55 km 2 km-km",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "0e3c9f35-d4ba-3300-8d00-661766dc1d19",
+        "trainDetectorMnemonic": "CV.ER-ORAV-POLV_VER",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "f68a9eb9-5f1a-3c51-a216-b0cbf0cc153d",
+        "stationingTrackMnemonic": "TCK.ER-T001-RUUSA_55km_2km-V1",
+        "tcz": "b445f5d8-52c4-30dd-ab5c-5f9656f388a4",
+        "tczMnemonic": "TCZ.T001-RUUSA_55km_2km"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b2555058-1340-30f8-850a-725c3784485d",
@@ -567,7 +567,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LANGE_9km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "9d0748e9-83ce-3d75-bce0-1d47dc38ccfe",
@@ -588,7 +588,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VALM"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5dd1edc0-463a-3f07-8ebd-05f5d8fb312f",
@@ -609,7 +609,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ILUMETSA_67km_2pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "32d7f308-da03-3156-a291-d0f347999858",
@@ -630,7 +630,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-AARDLAKOID_3km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "010d5192-cd01-3bc5-a413-20e870c4ca86",
@@ -651,7 +651,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TAEV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "bf1fb7a8-5049-348f-b5a0-c9d0e45ed49a",
@@ -672,7 +672,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "343ab49c-4e8c-3a98-b21b-118c061b6165",
@@ -693,7 +693,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a861253c-4f3b-3c32-ac41-d2c8b27c5783",
@@ -714,7 +714,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIKKA_64km_3pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "47f19f1f-2715-3588-ab90-a818f99fcf2a",
@@ -735,7 +735,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VASTSE-KUUSTE_29km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "781e510a-c85b-3662-9a89-3a134761dacb",
@@ -756,7 +756,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-AARDLAKOID_3km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "d31ef1e9-de2a-3704-bedb-7279e8e23b44",
@@ -777,7 +777,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b48582fd-9aed-3e0f-9773-afaaa7c835af",
@@ -798,7 +798,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LANGE_9km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "2628f8a6-1ef7-3477-be9c-9c6eada01e6b",
@@ -819,28 +819,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LAANE_24km_6pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "04af459f-4c49-33ed-a6e7-7a2ec1ba0792",
-        "mnemonic": "TE.T001-ORAV-V4",
-        "name": "TE.T001-ORAV-V4",
-        "longName": "TE.T001-ORAV-V4",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "ffe1562a-d3aa-37bc-96af-4a13f4ba4ee0",
-        "trainDetectorMnemonic": "CV.ER-ORAV-ORAV-4",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "ecada8ce-896f-3802-9ca7-6dccbc7b722a",
-        "stationingTrackMnemonic": "TCK.ER-T001-ORAV-ORAV-V4",
-        "tcz": "f82c5149-dcdb-3340-b7bc-b21da4e3001a",
-        "tczMnemonic": "TCZ.T001-ORAV"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "03edd396-a9c9-3a08-a4c9-770b6e78d951",
@@ -861,7 +840,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "04af459f-4c49-33ed-a6e7-7a2ec1ba0792",
+        "mnemonic": "TE.T001-ORAV-V4",
+        "name": "TE.T001-ORAV-V4",
+        "longName": "TE.T001-ORAV-V4",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "ffe1562a-d3aa-37bc-96af-4a13f4ba4ee0",
+        "trainDetectorMnemonic": "CV.ER-ORAV-ORAV-4",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "ecada8ce-896f-3802-9ca7-6dccbc7b722a",
+        "stationingTrackMnemonic": "TCK.ER-T001-ORAV-ORAV-V4",
+        "tcz": "f82c5149-dcdb-3340-b7bc-b21da4e3001a",
+        "tczMnemonic": "TCZ.T001-ORAV"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "cdbdcc3a-6dc9-3a4b-8c6c-76c071bfbaad",
@@ -882,7 +882,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ILUMETSA_67km_2pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "6407d930-e52f-3312-99ee-a650dcc764fe",
@@ -903,7 +903,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLVANDI_50_km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "e19fa85e-37c7-3a67-b5fe-cf2b08a08d65",
@@ -924,7 +924,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4269fbd1-11e8-3997-8935-b23993c14c2a",
@@ -945,7 +945,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "c838033f-80b2-36d5-8e12-7e20d93b30b8",
@@ -966,7 +966,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "8a7262f8-048e-3d87-8cce-d4465f28333f",
@@ -987,28 +987,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "15019740-9a8c-3563-b136-64fc729459ef",
-        "mnemonic": "TE.T001-TAEV38-V1",
-        "name": "TE.T001-TAEV38-V1",
-        "longName": "TE.T001-TAEV38-V1",
-        "direction": "EVEN",
-        "type": "OUTPUT",
-        "node": "3156f39a-870d-304d-b5b0-6caf31022266",
-        "nodeMnemonic": "ND.ER-T001-TAEV38",
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
-        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4f6416b1-7a87-3fa5-bb26-021f352f9824",
@@ -1029,7 +1008,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ILUMETSA_67km_2pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "15019740-9a8c-3563-b136-64fc729459ef",
+        "mnemonic": "TE.T001-TAEV38-V1",
+        "name": "TE.T001-TAEV38-V1",
+        "longName": "TE.T001-TAEV38-V1",
+        "direction": "EVEN",
+        "type": "OUTPUT",
+        "node": "3156f39a-870d-304d-b5b0-6caf31022266",
+        "nodeMnemonic": "ND.ER-T001-TAEV38",
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
+        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
+        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "11b17365-3f31-36ef-a13e-3f30dd0a3805",
@@ -1050,28 +1050,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "c71c55b1-1564-339e-8734-199287fd74c9",
-        "mnemonic": "TE.T001-KOID-V9",
-        "name": "TE.T001-KOID-V9",
-        "longName": "TE.T001-KOID-V9",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "948c4f32-4aed-3368-b146-f4dd11e7dcfa",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-9t",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "e5f765e5-d28b-364e-95a5-62ac29d64185",
-        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V9",
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "c95b98dc-6856-3c94-a676-a3474da22f2b",
@@ -1092,7 +1071,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VALGEMETSA_32km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "c71c55b1-1564-339e-8734-199287fd74c9",
+        "mnemonic": "TE.T001-KOID-V9",
+        "name": "TE.T001-KOID-V9",
+        "longName": "TE.T001-KOID-V9",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "948c4f32-4aed-3368-b146-f4dd11e7dcfa",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-9t",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "e5f765e5-d28b-364e-95a5-62ac29d64185",
+        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V9",
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "060292e3-2fad-3e3c-99f4-38ac642fad9f",
@@ -1113,28 +1113,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "7d96c639-ce4b-3af4-a359-301329f8b3f7",
-        "mnemonic": "TE.T001-ORAV-V1",
-        "name": "TE.T001-ORAV-V1",
-        "longName": "TE.T001-ORAV-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "ea42dc19-7190-30c1-aebf-f0240cb0e487",
-        "trainDetectorMnemonic": "CV.ER-ORAV-ORAV-AP",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "ecca0ff9-8628-326d-9dde-283c0c652c7f",
-        "stationingTrackMnemonic": "TCK.ER-T001-ORAVA_74km_2pk-V1",
-        "tcz": "4e54081c-bf6c-39ac-8754-27bd530910fe",
-        "tczMnemonic": "TCZ.T001-ORAVA_74km_2pk"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "47ceffa9-cdb3-35cb-9385-937435470255",
@@ -1155,7 +1134,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REBASE_18km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "7d96c639-ce4b-3af4-a359-301329f8b3f7",
+        "mnemonic": "TE.T001-ORAV-V1",
+        "name": "TE.T001-ORAV-V1",
+        "longName": "TE.T001-ORAV-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "ea42dc19-7190-30c1-aebf-f0240cb0e487",
+        "trainDetectorMnemonic": "CV.ER-ORAV-ORAV-AP",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "ecca0ff9-8628-326d-9dde-283c0c652c7f",
+        "stationingTrackMnemonic": "TCK.ER-T001-ORAVA_74km_2pk-V1",
+        "tcz": "4e54081c-bf6c-39ac-8754-27bd530910fe",
+        "tczMnemonic": "TCZ.T001-ORAVA_74km_2pk"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "c119f26b-0928-3612-89a6-242d400c613c",
@@ -1176,7 +1176,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIIDJARVE_35km_1pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "08260753-1e3d-378a-9986-d9577fdfaa7e",
@@ -1197,7 +1197,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5f851f24-efcb-302e-ad62-eca2096474a6",
@@ -1218,7 +1218,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "24ebf477-4767-3f5f-8e52-7905b4d2ab2f",
@@ -1239,7 +1239,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b58719be-7704-3a53-ab02-25733d5f80f8",
@@ -1260,7 +1260,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VERIORA_61km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "1c5fb3ca-c748-344e-8b85-26140bfeb3c1",
@@ -1281,7 +1281,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TART"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "44787cb4-8d08-3aa6-8584-1ddca7cee3fb",
@@ -1302,7 +1302,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REBA"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "f146b6d2-e02c-3472-9217-195135711f96",
@@ -1323,7 +1323,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VALM"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0634b93b-b10a-39d6-9573-7616cad26ead",
@@ -1344,7 +1344,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a6f5d91a-9897-370f-b758-0f242149ccbc",
@@ -1365,28 +1365,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANA-KUUSTE_16km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "d10c2c59-41ac-30ed-aca6-05864f3768cc",
-        "mnemonic": "TE.T001-TAEV-V1",
-        "name": "TE.T001-TAEV-V1",
-        "longName": "TE.T001-TAEV-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
-        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "973d9976-d668-3258-a99c-a58512a1cd85",
-        "tczMnemonic": "TCZ.T001-TAEV"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "464f721e-39ed-3d47-9538-c1258dd5bf76",
@@ -1407,7 +1386,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ILUM"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "d10c2c59-41ac-30ed-aca6-05864f3768cc",
+        "mnemonic": "TE.T001-TAEV-V1",
+        "name": "TE.T001-TAEV-V1",
+        "longName": "TE.T001-TAEV-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
+        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
+        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "973d9976-d668-3258-a99c-a58512a1cd85",
+        "tczMnemonic": "TCZ.T001-TAEV"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "13bb5672-494f-3a4b-af05-477de40d6642",
@@ -1428,7 +1428,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7331a2f7-222a-3c48-b430-fa66b8d383d6",
@@ -1449,28 +1449,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "83c00d24-4725-38ec-9281-025235adb45d",
-        "mnemonic": "TE.T001-VALM32-V1.2",
-        "name": "TE.T001-VALM32-V1.2",
-        "longName": "TE.T001-VALM32-V1.2",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "5ff14585-ce38-317c-956e-0970df2a5b93",
-        "nodeMnemonic": "ND.ER-T001-VALM32",
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": "6ec172dd-aa39-3620-8124-a7616003fac3",
-        "circulationTrackMnemonic": "TCK.ER-T001-VALM32-KIID35-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "3ca4eba5-e9e9-30a9-8c12-4ab8d874e797",
@@ -1491,7 +1470,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "416222ff-25ad-3e1e-b756-93daacabfbea",
@@ -1512,7 +1491,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-UHTI"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7f3cfd16-032f-3ade-802f-10f4c29a1da6",
@@ -1533,7 +1512,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7d4b858e-7ab7-3f02-9004-e011eb063cf5",
@@ -1554,7 +1533,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLVANDI_50_km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "aa8eafec-0e26-3911-9907-d0a5f00ed1ba",
@@ -1575,7 +1554,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ILUM"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "24b4928c-91ff-3b4f-abd0-5d16e88a4fc9",
@@ -1596,7 +1575,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VALGEMETSA_32km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4a27f809-250c-32e2-b17d-1fabe2663d6f",
@@ -1617,28 +1596,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "974c1220-fd78-3892-b06f-c95cac898979",
-        "mnemonic": "TE.T001-KOID-V12",
-        "name": "TE.T001-KOID-V12",
-        "longName": "TE.T001-KOID-V12",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "84f6f72e-b66f-35c0-93c2-899d3e6ef569",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-M22P",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "bfa2f06c-ecb5-317b-9531-f776cbac09d8",
-        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V12",
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "f7db4858-c9c3-3061-af0e-da0f29a7f357",
@@ -1659,7 +1617,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "974c1220-fd78-3892-b06f-c95cac898979",
+        "mnemonic": "TE.T001-KOID-V12",
+        "name": "TE.T001-KOID-V12",
+        "longName": "TE.T001-KOID-V12",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "84f6f72e-b66f-35c0-93c2-899d3e6ef569",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-M22P",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "bfa2f06c-ecb5-317b-9531-f776cbac09d8",
+        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V12",
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "6970e6d3-1b40-352b-96ab-bdeeb4d1bb18",
@@ -1680,7 +1659,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "43ddaa9a-aeb2-3c26-8206-10f9006fc878",
@@ -1701,28 +1680,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "ec6fedd8-1e71-361d-ab75-9d17ce8218d5",
-        "mnemonic": "TE.T001-POLV-LC42679-V1",
-        "name": "TE.T001-POLV-LC42679-V1",
-        "longName": "TE.T001-POLV-LC42679-V1",
-        "direction": "EVEN",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "4891eedb-4479-3f8a-bd7b-c048da910549",
-        "trainDetectorMnemonic": "CV.ER-REOL-POLV-BP",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
-        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "156de863-cad7-3e72-82f5-fcc2fa99802c",
@@ -1743,7 +1701,49 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "ec6fedd8-1e71-361d-ab75-9d17ce8218d5",
+        "mnemonic": "TE.T001-POLV-LC42679-V1",
+        "name": "TE.T001-POLV-LC42679-V1",
+        "longName": "TE.T001-POLV-LC42679-V1",
+        "direction": "EVEN",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "4891eedb-4479-3f8a-bd7b-c048da910549",
+        "trainDetectorMnemonic": "CV.ER-REOL-POLV-BP",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
+        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "83c00d24-4725-38ec-9281-025235adb45d",
+        "mnemonic": "TE.T001-VALM32-V1.2",
+        "name": "TE.T001-VALM32-V1.2",
+        "longName": "TE.T001-VALM32-V1.2",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "5ff14585-ce38-317c-956e-0970df2a5b93",
+        "nodeMnemonic": "ND.ER-T001-VALM32",
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
+        "circulationTrack": "6ec172dd-aa39-3620-8124-a7616003fac3",
+        "circulationTrackMnemonic": "TCK.ER-T001-VALM32-KIID35-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "23272280-c457-3bf3-8c76-bb74a91d6470",
@@ -1764,7 +1764,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VAKU"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "02106c2b-6b41-323d-bf15-9ae95ff19b7a",
@@ -1785,7 +1785,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "94bcd2f0-e8e1-36e3-8fc5-9d2547336d37",
@@ -1806,7 +1806,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "66c4a0ad-d548-36d9-b17a-c9f3fc707310",
@@ -1827,28 +1827,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "492baf60-1aea-35af-b5c1-7a501834aae8",
-        "mnemonic": "TE.T001-REOL-V1.3",
-        "name": "TE.T001-REOL-V1.3",
-        "longName": "TE.T001-REOL-V1.3",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "6ab9f197-a979-3615-ad50-e4a468f68d95",
-        "nodeMnemonic": "ND.ER-T001-REOL",
-        "trainDetector": "b8017dc3-66a1-3b16-a939-051e7a53ce54",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1BP",
-        "circulationTrack": "d14551af-ed85-3abd-b2f7-a755cc2fc67b",
-        "circulationTrackMnemonic": "TCK.ER-T001-REOL-VANK16-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "ce0f025b-036e-3574-b528-d485f0ffbfdc",
@@ -1869,7 +1848,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4e1a5dd0-d53a-3f7e-a854-396a675cbced",
@@ -1890,7 +1869,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REBASE_18km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "e5c1ca7c-e7c8-3064-bdd7-51c8308dc779",
@@ -1911,28 +1890,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TAEVASKOJA_38km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "8625d4c7-65fc-35c7-87fd-f5f3a1ff3dd7",
-        "mnemonic": "TE.T001-RUUS-V1.2",
-        "name": "TE.T001-RUUS-V1.2",
-        "longName": "TE.T001-RUUS-V1.2",
-        "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "0e3c9f35-d4ba-3300-8d00-661766dc1d19",
-        "trainDetectorMnemonic": "CV.ER-ORAV-POLV_VER",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "ade5c54b-5bb0-306c-8855-18afbf81cdf1",
-        "tczMnemonic": "TCZ.T001-RUUS"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "11ccab32-ede6-3f1d-a862-a5a9d4de2d04",
@@ -1953,7 +1911,49 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VAKU"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "8625d4c7-65fc-35c7-87fd-f5f3a1ff3dd7",
+        "mnemonic": "TE.T001-RUUS-V1.2",
+        "name": "TE.T001-RUUS-V1.2",
+        "longName": "TE.T001-RUUS-V1.2",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "0e3c9f35-d4ba-3300-8d00-661766dc1d19",
+        "trainDetectorMnemonic": "CV.ER-ORAV-POLV_VER",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "ade5c54b-5bb0-306c-8855-18afbf81cdf1",
+        "tczMnemonic": "TCZ.T001-RUUS"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "492baf60-1aea-35af-b5c1-7a501834aae8",
+        "mnemonic": "TE.T001-REOL-V1.3",
+        "name": "TE.T001-REOL-V1.3",
+        "longName": "TE.T001-REOL-V1.3",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "6ab9f197-a979-3615-ad50-e4a468f68d95",
+        "nodeMnemonic": "ND.ER-T001-REOL",
+        "trainDetector": "b8017dc3-66a1-3b16-a939-051e7a53ce54",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1BP",
+        "circulationTrack": "d14551af-ed85-3abd-b2f7-a755cc2fc67b",
+        "circulationTrackMnemonic": "TCK.ER-T001-REOL-VANK16-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "9ff0c934-721c-38c4-8c18-1ef31bb19a60",
@@ -1974,7 +1974,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "f0eadc97-c86d-3347-a7c7-c176e6f1e786",
@@ -1995,7 +1995,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0aaec69d-6b5a-3753-bc6d-b6acec8c896e",
@@ -2016,7 +2016,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "911c592d-3dfc-368b-b49c-70c43e939986",
@@ -2037,7 +2037,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-AARDLAKOID_3km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "9896e860-4e2b-3e09-a04f-3ba479fe6396",
@@ -2058,7 +2058,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANK"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "3c4b0c6f-841f-3160-a6db-a13bf54748b5",
@@ -2079,7 +2079,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a0a2cc64-871e-37f9-9cde-65c696072774",
@@ -2100,28 +2100,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAVA_74km_2pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "606aea56-158a-3701-999b-3a00fe4f45c2",
-        "mnemonic": "TE.T001-LAAN24-V1.2",
-        "name": "TE.T001-LAAN24-V1.2",
-        "longName": "TE.T001-LAAN24-V1.2",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "d26a7887-85cd-3312-9122-c386148bda40",
-        "nodeMnemonic": "ND.ER-T001-LAAN24",
-        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
-        "circulationTrack": "c01bc549-cb63-380a-bc9e-1dfd24e8142c",
-        "circulationTrackMnemonic": "TCK.ER-T001-LAAN24-VAKU-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "943ae34d-557a-3c92-bd33-6e353dd7c92b",
@@ -2142,28 +2121,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "aa0d019a-96ca-3f19-884a-5d7f3c5a8e25",
-        "mnemonic": "TE.T001-TAEVASKOJA 38-V1.2",
-        "name": "TE.T001-TAEVASKOJA 38-V1.2",
-        "longName": "TE.T001-TAEVASKOJA 38-V1.2",
+        "id": "606aea56-158a-3701-999b-3a00fe4f45c2",
+        "mnemonic": "TE.T001-LAAN24-V1.2",
+        "name": "TE.T001-LAAN24-V1.2",
+        "longName": "TE.T001-LAAN24-V1.2",
         "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
+        "type": "OUTPUT",
+        "node": "d26a7887-85cd-3312-9122-c386148bda40",
+        "nodeMnemonic": "ND.ER-T001-LAAN24",
+        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
+        "circulationTrack": "c01bc549-cb63-380a-bc9e-1dfd24e8142c",
+        "circulationTrackMnemonic": "TCK.ER-T001-LAAN24-VAKU-V1",
         "stationingTrack": null,
         "stationingTrackMnemonic": null,
-        "tcz": "6d4f92a2-f983-3f53-97da-a0f86357e3fc",
-        "tczMnemonic": "TCZ.T001-TAEVASKOJA_38km_10pk"
+        "tcz": null,
+        "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0d606c04-eb95-340a-91ba-a1e94ae65620",
@@ -2184,28 +2163,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANK"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "14bd582b-1ad8-3128-aecd-60fdce5a0ee0",
-        "mnemonic": "TE.T001-REOL-V1",
-        "name": "TE.T001-REOL-V1",
-        "longName": "TE.T001-REOL-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
+        "id": "aa0d019a-96ca-3f19-884a-5d7f3c5a8e25",
+        "mnemonic": "TE.T001-TAEVASKOJA 38-V1.2",
+        "name": "TE.T001-TAEVASKOJA 38-V1.2",
+        "longName": "TE.T001-TAEVASKOJA 38-V1.2",
+        "direction": "ODD",
+        "type": "REGISTER",
         "node": null,
         "nodeMnemonic": null,
-        "trainDetector": "defabd38-aa0a-3caa-9058-58a8b67f4486",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1t",
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
         "circulationTrack": null,
         "circulationTrackMnemonic": null,
-        "stationingTrack": "d121a754-200d-3b0b-ae11-e4918dcf6a7d",
-        "stationingTrackMnemonic": "TCK.ER-T001-REOL-REOL-V1",
-        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
-        "tczMnemonic": "TCZ.T001-REOL"
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "6d4f92a2-f983-3f53-97da-a0f86357e3fc",
+        "tczMnemonic": "TCZ.T001-TAEVASKOJA_38km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "9725f51c-1994-3896-ab8e-dc88c37e18b3",
@@ -2226,28 +2205,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "24da8cae-6d16-3887-af92-b902f8521763",
-        "mnemonic": "TE.T001-POLV-LC42679-V1.2",
-        "name": "TE.T001-POLV-LC42679-V1.2",
-        "longName": "TE.T001-POLV-LC42679-V1.2",
-        "direction": "ODD",
-        "type": "REGISTER",
+        "id": "14bd582b-1ad8-3128-aecd-60fdce5a0ee0",
+        "mnemonic": "TE.T001-REOL-V1",
+        "name": "TE.T001-REOL-V1",
+        "longName": "TE.T001-REOL-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
         "node": null,
         "nodeMnemonic": null,
-        "trainDetector": "00203db5-4c9d-3ad8-8e41-b17c4da14af6",
-        "trainDetectorMnemonic": "CV.ER-REOL-POLV-2-4R",
+        "trainDetector": "defabd38-aa0a-3caa-9058-58a8b67f4486",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1t",
         "circulationTrack": null,
         "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
-        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
+        "stationingTrack": "d121a754-200d-3b0b-ae11-e4918dcf6a7d",
+        "stationingTrackMnemonic": "TCK.ER-T001-REOL-REOL-V1",
+        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
+        "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "849c7c1b-9758-3800-bc16-e08ae34412d9",
@@ -2268,7 +2247,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIRS"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5fe78aa9-bfbd-3740-8b15-2ec0f7698a5e",
@@ -2289,28 +2268,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "696ce0f3-da37-3edf-822c-f57376ce54f9",
-        "mnemonic": "TE.T001-REOL-V2.2",
-        "name": "TE.T001-REOL-V2.2",
-        "longName": "TE.T001-REOL-V2.2",
+        "id": "24da8cae-6d16-3887-af92-b902f8521763",
+        "mnemonic": "TE.T001-POLV-LC42679-V1.2",
+        "name": "TE.T001-POLV-LC42679-V1.2",
+        "longName": "TE.T001-POLV-LC42679-V1.2",
         "direction": "ODD",
         "type": "REGISTER",
         "node": null,
         "nodeMnemonic": null,
-        "trainDetector": "80ca059a-b2fa-3a9b-9438-e704f02f2bf2",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1-7R",
+        "trainDetector": "00203db5-4c9d-3ad8-8e41-b17c4da14af6",
+        "trainDetectorMnemonic": "CV.ER-REOL-POLV-2-4R",
         "circulationTrack": null,
         "circulationTrackMnemonic": null,
         "stationingTrack": null,
         "stationingTrackMnemonic": null,
-        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
-        "tczMnemonic": "TCZ.T001-REOL"
+        "tcz": "2694b29d-4be5-3031-82da-24efd1826851",
+        "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "04a97a1c-2a84-3144-a4ce-de552531cf30",
@@ -2331,7 +2310,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0f7d4b0d-b012-3096-9f01-37fee403c0a9",
@@ -2352,7 +2331,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "696ce0f3-da37-3edf-822c-f57376ce54f9",
+        "mnemonic": "TE.T001-REOL-V2.2",
+        "name": "TE.T001-REOL-V2.2",
+        "longName": "TE.T001-REOL-V2.2",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "80ca059a-b2fa-3a9b-9438-e704f02f2bf2",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL-1-7R",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
+        "tczMnemonic": "TCZ.T001-REOL"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b55e8158-22aa-3675-bcde-cf016798b2e3",
@@ -2373,7 +2373,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VASTSE-KUUSTE_29km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "3ed49f4f-71ee-3fae-9ded-2300c4182c87",
@@ -2394,7 +2394,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-RUUSA_55km_2km"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "095cd609-2d05-366b-9dff-7353b2bc2df5",
@@ -2415,7 +2415,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TART"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "57ed914d-e352-3eec-a8f2-afe0c19f699a",
@@ -2436,7 +2436,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TAEV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "de4d0e6a-797c-302c-8892-05d01e68bbca",
@@ -2457,28 +2457,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "4ab8df27-45d3-3aa2-bf43-1fdec323cb02",
-        "mnemonic": "TE.T001-KIID35-V1.2",
-        "name": "TE.T001-KIID35-V1.2",
-        "longName": "TE.T001-KIID35-V1.2",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "bd7849d9-12a5-3328-9e33-9b9df83131b3",
-        "nodeMnemonic": "ND.ER-T001-KIID35",
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
-        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "e9082e26-bed3-38dc-8260-3dc111557fe5",
@@ -2499,7 +2478,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "975d24ad-5dc5-3fe1-83a0-ec81e161d07c",
@@ -2520,7 +2499,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-TAEVASKOJA_38km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "1359cabc-66f0-3781-b85d-9cd770b1b72d",
@@ -2541,28 +2520,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "7e05b9bd-f4a1-3b4b-9f49-c4fd114f1af4",
-        "mnemonic": "TE.T001-REBA-V1",
-        "name": "TE.T001-REBA-V1",
-        "longName": "TE.T001-REBA-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
-        "circulationTrack": "60421f8f-10ea-3f1d-96c9-a1757247146e",
-        "circulationTrackMnemonic": "TCK.ER-T001-REBA18-LAAN24-V1",
+        "id": "4ab8df27-45d3-3aa2-bf43-1fdec323cb02",
+        "mnemonic": "TE.T001-KIID35-V1.2",
+        "name": "TE.T001-KIID35-V1.2",
+        "longName": "TE.T001-KIID35-V1.2",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "bd7849d9-12a5-3328-9e33-9b9df83131b3",
+        "nodeMnemonic": "ND.ER-T001-KIID35",
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
+        "circulationTrack": "e7faa628-cdda-34a1-bc02-473403b67899",
+        "circulationTrackMnemonic": "TCK.ER-T001-KIID35-TAEV38-V1",
         "stationingTrack": null,
         "stationingTrackMnemonic": null,
-        "tcz": "324dfce4-13db-3a67-b70c-d0006e2e653d",
-        "tczMnemonic": "TCZ.T001-REBA"
+        "tcz": null,
+        "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "508ce3fc-0ea0-32dd-a7a5-026f0b7c64c6",
@@ -2583,7 +2562,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANA-KUUSTE_16km_10pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "7e05b9bd-f4a1-3b4b-9f49-c4fd114f1af4",
+        "mnemonic": "TE.T001-REBA-V1",
+        "name": "TE.T001-REBA-V1",
+        "longName": "TE.T001-REBA-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
+        "circulationTrack": "60421f8f-10ea-3f1d-96c9-a1757247146e",
+        "circulationTrackMnemonic": "TCK.ER-T001-REBA18-LAAN24-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "324dfce4-13db-3a67-b70c-d0006e2e653d",
+        "tczMnemonic": "TCZ.T001-REBA"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "2707f6c3-ccd9-3ed4-972d-9e39e0fb82b9",
@@ -2604,7 +2604,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "cc3f803f-0a36-3544-846a-5b63dbf85174",
@@ -2625,28 +2625,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "bc44bd37-ab91-3d86-9272-0386ea88c2f1",
-        "mnemonic": "TE.T001-KOID-V2.1",
-        "name": "TE.T001-KOID-V2.1",
-        "longName": "TE.T001-KOID-V2.1",
-        "direction": "EVEN",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "a87ffb24-3111-3ffe-9302-9b4365129f30",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-10-18R",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "d901c807-ed7a-3800-a767-7f99988a234b",
@@ -2667,7 +2646,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "bc44bd37-ab91-3d86-9272-0386ea88c2f1",
+        "mnemonic": "TE.T001-KOID-V2.1",
+        "name": "TE.T001-KOID-V2.1",
+        "longName": "TE.T001-KOID-V2.1",
+        "direction": "EVEN",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "a87ffb24-3111-3ffe-9302-9b4365129f30",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-10-18R",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "dee3155a-20bc-399e-b4a0-0a1db5e8e64a",
@@ -2688,7 +2688,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VASTSE-KUUSTE_29km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "e5d991d8-b1e4-3534-a17d-858ad858cce0",
@@ -2709,7 +2709,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-RUUS"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5b182844-d6ab-3448-b90e-d3bad8a3a46b",
@@ -2730,7 +2730,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4fc5ce4c-f790-3955-ab35-7eeaf70bc8e6",
@@ -2751,7 +2751,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "965d4e53-c2a4-386d-a7a0-94d66e4a197b",
@@ -2772,7 +2772,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "44e73fd5-336e-33f3-a6fa-cb2543fca6cf",
@@ -2793,70 +2793,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIKKA_64km_3pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "b96faa3e-0753-3697-b3f8-33172bcb02e3",
-        "mnemonic": "TE.T001-ILUM-V1",
-        "name": "TE.T001-ILUM-V1",
-        "longName": "TE.T001-ILUM-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "d723d48b-4980-3737-9713-4388e02cb659",
-        "trainDetectorMnemonic": "CV.ER-ORAV-VER_ORAV",
-        "circulationTrack": "c0d3120a-cdf8-3249-9093-1b6588303fb6",
-        "circulationTrackMnemonic": "TCK.ER-T001-KIKK64-ILUM67-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "e15c7a90-4714-37b3-afa6-5feec29d20b1",
-        "tczMnemonic": "TCZ.T001-ILUM"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "dad83b63-f946-33e0-85a4-db8dd868e3dc",
-        "mnemonic": "TE.T001-LANG9-V1.2",
-        "name": "TE.T001-LANG9-V1.2",
-        "longName": "TE.T001-LANG9-V1.2",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "1cd1c545-a14b-3267-a295-795280510a79",
-        "nodeMnemonic": "ND.ER-T001-LANG9",
-        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
-        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
-        "circulationTrack": "195525e0-8cc0-36f0-8bba-4bba8ed51c86",
-        "circulationTrackMnemonic": "TCK.ER-T001-LANG9-REOL-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "11508565-2aad-3181-b822-b649484cb5eb",
-        "mnemonic": "TE.T001-KIID-V1.2",
-        "name": "TE.T001-KIID-V1.2",
-        "longName": "TE.T001-KIID-V1.2",
-        "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "6fc9db5f-cc77-3214-b1ba-323630a8da5f",
-        "tczMnemonic": "TCZ.T001-KIID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a500f6c9-4760-38cb-913d-c53f00e4fba7",
@@ -2877,7 +2814,49 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VAKU"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "b96faa3e-0753-3697-b3f8-33172bcb02e3",
+        "mnemonic": "TE.T001-ILUM-V1",
+        "name": "TE.T001-ILUM-V1",
+        "longName": "TE.T001-ILUM-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "d723d48b-4980-3737-9713-4388e02cb659",
+        "trainDetectorMnemonic": "CV.ER-ORAV-VER_ORAV",
+        "circulationTrack": "c0d3120a-cdf8-3249-9093-1b6588303fb6",
+        "circulationTrackMnemonic": "TCK.ER-T001-KIKK64-ILUM67-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "e15c7a90-4714-37b3-afa6-5feec29d20b1",
+        "tczMnemonic": "TCZ.T001-ILUM"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "dad83b63-f946-33e0-85a4-db8dd868e3dc",
+        "mnemonic": "TE.T001-LANG9-V1.2",
+        "name": "TE.T001-LANG9-V1.2",
+        "longName": "TE.T001-LANG9-V1.2",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "1cd1c545-a14b-3267-a295-795280510a79",
+        "nodeMnemonic": "ND.ER-T001-LANG9",
+        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
+        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
+        "circulationTrack": "195525e0-8cc0-36f0-8bba-4bba8ed51c86",
+        "circulationTrackMnemonic": "TCK.ER-T001-LANG9-REOL-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "854dbbdf-a2ea-3bdb-ae5b-257fac061824",
@@ -2898,7 +2877,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VERIORA_61km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "11508565-2aad-3181-b822-b649484cb5eb",
+        "mnemonic": "TE.T001-KIID-V1.2",
+        "name": "TE.T001-KIID-V1.2",
+        "longName": "TE.T001-KIID-V1.2",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "9e507670-8050-3bd3-90e3-130978d197ad",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU_POLV",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "6fc9db5f-cc77-3214-b1ba-323630a8da5f",
+        "tczMnemonic": "TCZ.T001-KIID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7b0e52c4-2bdd-313c-8f25-c4b58d3b21ce",
@@ -2919,7 +2919,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LAANE_24km_6pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "92c76aea-0800-3e68-b2b9-658dd2e86ca8",
@@ -2940,7 +2940,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "27102f39-a9f2-3762-9b32-6766ae7f19be",
@@ -2961,7 +2961,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VAKU"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "a312d5e7-cad5-3a5d-9b5c-0f305358f4c9",
@@ -2982,7 +2982,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "43477854-f62a-3a0d-9471-dafa8d40964b",
@@ -3003,7 +3003,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5c498552-dd34-3f5c-b669-07b707a3a19a",
@@ -3024,28 +3024,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-YLEN"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "992715a4-27e2-3b7d-a697-711e0195daaf",
-        "mnemonic": "TE.T001-VAKU-V1.5",
-        "name": "TE.T001-VAKU-V1.5",
-        "longName": "TE.T001-VAKU-V1.5",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "cbf49637-a1ab-31c0-8cf4-593f97c080bf",
-        "nodeMnemonic": "ND.ER-T001-VAKU",
-        "trainDetector": "a4b3743e-11b5-3b78-b852-c6b4c71b5771",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU-1AP1",
-        "circulationTrack": "35607e74-1d5a-3b5c-96f5-f932b3532b8d",
-        "circulationTrackMnemonic": "TCK.ER-T001-VAKU-VALM32-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "3de08d01-f60a-39eb-b734-086e69d79ec9",
@@ -3066,7 +3045,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "1ee1a96b-bd10-3f53-950e-d376a9c4a088",
@@ -3087,7 +3066,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VERIORA_61km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "992715a4-27e2-3b7d-a697-711e0195daaf",
+        "mnemonic": "TE.T001-VAKU-V1.5",
+        "name": "TE.T001-VAKU-V1.5",
+        "longName": "TE.T001-VAKU-V1.5",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "cbf49637-a1ab-31c0-8cf4-593f97c080bf",
+        "nodeMnemonic": "ND.ER-T001-VAKU",
+        "trainDetector": "a4b3743e-11b5-3b78-b852-c6b4c71b5771",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU-1AP1",
+        "circulationTrack": "35607e74-1d5a-3b5c-96f5-f932b3532b8d",
+        "circulationTrackMnemonic": "TCK.ER-T001-VAKU-VALM32-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "cc19f3af-4aeb-3e4d-9c0b-0fb425e3fb1f",
@@ -3108,7 +3108,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "af51b89a-c2d1-3737-885f-ebea214bf764",
@@ -3129,28 +3129,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "271e52d8-8f29-3f33-b35b-d5ac12a5f314",
-        "mnemonic": "TE.T001-KOID-V11",
-        "name": "TE.T001-KOID-V11",
-        "longName": "TE.T001-KOID-V11",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "1e4a11d5-b335-3cb5-a5cb-1f608a6dbb78",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-M24P",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "7f99f470-9381-3838-946b-2a8e339ebcd2",
-        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V11",
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "4a514926-30aa-38c5-b01b-384fc4eb5401",
@@ -3171,7 +3150,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "aa1b6ec9-9ce2-3865-8876-5f5afda094a5",
@@ -3192,7 +3171,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "271e52d8-8f29-3f33-b35b-d5ac12a5f314",
+        "mnemonic": "TE.T001-KOID-V11",
+        "name": "TE.T001-KOID-V11",
+        "longName": "TE.T001-KOID-V11",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "1e4a11d5-b335-3cb5-a5cb-1f608a6dbb78",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-M24P",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "7f99f470-9381-3838-946b-2a8e339ebcd2",
+        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V11",
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "2c1a3323-70ac-3f48-8cf2-8437a94b7bf4",
@@ -3213,7 +3213,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "c49a1717-2ac8-3040-9c3b-9bfca5ba645a",
@@ -3234,7 +3234,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REOL"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "79d00c45-ee3f-3446-8f71-4c698f6377a5",
@@ -3255,7 +3255,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0002b099-26e2-3877-bfcf-4e7fafbf514f",
@@ -3276,28 +3276,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "0407f244-a89f-3a7f-b1b0-50e4d51c6530",
-        "mnemonic": "TE.T001-KOID-V1A",
-        "name": "TE.T001-KOID-V1A",
-        "longName": "TE.T001-KOID-V1A",
-        "direction": "ODD",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "14a1be3b-fa8f-33ff-864a-4179df93de5c",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-1-5R",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "d841c2f8-6276-3f78-86c0-1cb1a07b728f",
@@ -3318,7 +3297,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VER"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "0407f244-a89f-3a7f-b1b0-50e4d51c6530",
+        "mnemonic": "TE.T001-KOID-V1A",
+        "name": "TE.T001-KOID-V1A",
+        "longName": "TE.T001-KOID-V1A",
+        "direction": "ODD",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "14a1be3b-fa8f-33ff-864a-4179df93de5c",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-1-5R",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "068b5c29-e0ff-3991-a4d0-7ed82f033589",
@@ -3339,7 +3339,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-PETS"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "15cfaa8c-a844-31bb-90ec-f5d092140196",
@@ -3360,7 +3360,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5ad476f4-9e91-31fd-8cb9-af2b346f7e8f",
@@ -3381,7 +3381,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-LAANE_24km_6pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "b5e5d064-451d-348a-8e93-e8c33074174d",
@@ -3402,7 +3402,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIKKA_64km_3pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "6de5d341-4047-3b8c-827b-bd4ffb5538e5",
@@ -3423,7 +3423,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REBA"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7c99217b-6a40-3555-9e9a-9c4c22ff46dd",
@@ -3444,28 +3444,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-UHTI"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "a2f1cb5c-c81f-30f1-8a3f-75ced27d8cd9",
-        "mnemonic": "TE.T001-POLV-V1.6",
-        "name": "TE.T001-POLV-V1.6",
-        "longName": "TE.T001-POLV-V1.6",
-        "direction": "ODD",
-        "type": "OUTPUT",
-        "node": "ee2f79cf-e12a-3ee6-ad4b-81ede08f38a1",
-        "nodeMnemonic": "ND.ER-T001-POLV",
-        "trainDetector": "9b859787-962d-36b6-b03a-520883c91b76",
-        "trainDetectorMnemonic": "CV.ER-REOL-POLV-1AP1",
-        "circulationTrack": "177b0a71-7cd3-3e24-90dd-a15236b78901",
-        "circulationTrackMnemonic": "TCK.ER-T001-POLV-HOLV50-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "8361b7ea-2d3d-3988-b7e8-71b343ca014d",
@@ -3486,7 +3465,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-REBASE_18km_5pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "0aae5603-396b-32db-bb83-18f5b90dc3eb",
@@ -3507,7 +3486,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-ORAVA_74km_2pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "16fb870b-d454-3634-a861-1c368de86154",
@@ -3528,7 +3507,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLVA_43km_7pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "a2f1cb5c-c81f-30f1-8a3f-75ced27d8cd9",
+        "mnemonic": "TE.T001-POLV-V1.6",
+        "name": "TE.T001-POLV-V1.6",
+        "longName": "TE.T001-POLV-V1.6",
+        "direction": "ODD",
+        "type": "OUTPUT",
+        "node": "ee2f79cf-e12a-3ee6-ad4b-81ede08f38a1",
+        "nodeMnemonic": "ND.ER-T001-POLV",
+        "trainDetector": "9b859787-962d-36b6-b03a-520883c91b76",
+        "trainDetectorMnemonic": "CV.ER-REOL-POLV-1AP1",
+        "circulationTrack": "177b0a71-7cd3-3e24-90dd-a15236b78901",
+        "circulationTrackMnemonic": "TCK.ER-T001-POLV-HOLV50-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "2d4ecad4-75ea-399d-92cc-372838a58a37",
@@ -3549,7 +3549,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "77134e1c-6940-399e-af5c-cf754746313a",
@@ -3570,7 +3570,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-POLV"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "40d0275e-1a42-3747-b508-1967ebd0d8af",
@@ -3591,7 +3591,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "6f1dbbd1-f61a-32d4-a59f-fc36ce134b26",
@@ -3612,7 +3612,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VAKU"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "8f63d5ef-9fdc-3172-961d-f3f26784ed9d",
@@ -3633,7 +3633,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-VANK"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7eafb0c6-60d2-3c62-bbc1-65c1f66bd420",
@@ -3654,7 +3654,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "fc9764a3-2426-3e48-ba20-39dc64fc0d79",
@@ -3675,7 +3675,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KIIDJARVE_35km_1pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "d5912699-0083-3ed9-be9f-4bbe264a9f19",
@@ -3696,7 +3696,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "5a884e39-a9dc-3aa9-8284-89e19ead99cb",
@@ -3717,91 +3717,7 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-YLEN"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "0cd3ed30-1bb0-3064-a486-f88ad651da7b",
-        "mnemonic": "TE.T001-UHTI-V1",
-        "name": "TE.T001-UHTI-V1",
-        "longName": "TE.T001-UHTI-V1",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
-        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
-        "circulationTrack": "195525e0-8cc0-36f0-8bba-4bba8ed51c86",
-        "circulationTrackMnemonic": "TCK.ER-T001-LANG9-REOL-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "5f979cde-301d-34e9-9c18-78038da78f74",
-        "tczMnemonic": "TCZ.T001-UHTI"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "9ba09a66-fb47-31b4-a121-03bd5aaf9fb7",
-        "mnemonic": "TE.T001-KOID-V3",
-        "name": "TE.T001-KOID-V3",
-        "longName": "TE.T001-KOID-V3",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "876213a1-33e9-318e-8e7d-abce9def8608",
-        "trainDetectorMnemonic": "CV.ER-KOID-KOID-3t",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "78227c9a-ec92-3ad6-b51f-e4041c8144b0",
-        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V3",
-        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
-        "tczMnemonic": "TCZ.T001-KOID"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "742d291a-5136-3490-8a33-1c061e568ea0",
-        "mnemonic": "TE.T001-REOL-V2",
-        "name": "TE.T001-REOL-V2",
-        "longName": "TE.T001-REOL-V2",
-        "direction": "BOTH",
-        "type": "INPUT",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "01a95369-3f37-3529-81b1-18833d569d40",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL-IIt",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": "98fbcb4a-a4d4-3668-b089-074be42d4069",
-        "stationingTrackMnemonic": "TCK.ER-T001-REOL-REOL-V2",
-        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
-        "tczMnemonic": "TCZ.T001-REOL"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
-        "tczName": "",
-        "nodeName": "",
-        "id": "ea299351-4d06-38c6-b9ac-e70b3c276fec",
-        "mnemonic": "TE.T001-VALM-V1.2",
-        "name": "TE.T001-VALM-V1.2",
-        "longName": "TE.T001-VALM-V1.2",
-        "direction": "EVEN",
-        "type": "REGISTER",
-        "node": null,
-        "nodeMnemonic": null,
-        "trainDetector": "b4485e60-ede7-33cf-ab8d-2077c53ef3be",
-        "trainDetectorMnemonic": "CV.ER-REOL-VAKU-1AP2",
-        "circulationTrack": null,
-        "circulationTrackMnemonic": null,
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": "3b2d9051-cd44-3f95-b681-f44b2a6eff60",
-        "tczMnemonic": "TCZ.T001-VALM"
-    },
-    {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "7d04bf89-c033-31d6-82a5-6684f3bc934c",
@@ -3822,28 +3738,91 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-HOLVANDI_50_km_4pk"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "b1714671-80e4-3685-8c9b-242a2ed14cd7",
-        "mnemonic": "TE.T001-KIKK64-V1",
-        "name": "TE.T001-KIKK64-V1",
-        "longName": "TE.T001-KIKK64-V1",
-        "direction": "EVEN",
-        "type": "OUTPUT",
-        "node": "eb6991bd-69ac-390f-9595-089415d30e99",
-        "nodeMnemonic": "ND.ER-T001-KIKK64",
-        "trainDetector": "e58420ab-8d93-3966-98a3-597cdc4255bf",
-        "trainDetectorMnemonic": "CV.ER-ORAV-VER-1AP1",
-        "circulationTrack": "a0d824f7-f919-3e3a-a92e-a8a7ece8430b",
-        "circulationTrackMnemonic": "TCK.ER-T001-VER-KIKK64-V1",
-        "stationingTrack": null,
-        "stationingTrackMnemonic": null,
-        "tcz": null,
-        "tczMnemonic": null
+        "id": "9ba09a66-fb47-31b4-a121-03bd5aaf9fb7",
+        "mnemonic": "TE.T001-KOID-V3",
+        "name": "TE.T001-KOID-V3",
+        "longName": "TE.T001-KOID-V3",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "876213a1-33e9-318e-8e7d-abce9def8608",
+        "trainDetectorMnemonic": "CV.ER-KOID-KOID-3t",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "78227c9a-ec92-3ad6-b51f-e4041c8144b0",
+        "stationingTrackMnemonic": "TCK.ER-T001-KOID-KOID-V3",
+        "tcz": "ac0756ea-f2ee-3586-90ae-ffb314cf2d35",
+        "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "742d291a-5136-3490-8a33-1c061e568ea0",
+        "mnemonic": "TE.T001-REOL-V2",
+        "name": "TE.T001-REOL-V2",
+        "longName": "TE.T001-REOL-V2",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "01a95369-3f37-3529-81b1-18833d569d40",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL-IIt",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": "98fbcb4a-a4d4-3668-b089-074be42d4069",
+        "stationingTrackMnemonic": "TCK.ER-T001-REOL-REOL-V2",
+        "tcz": "24812122-e379-3bca-9d4a-3e01f4e09950",
+        "tczMnemonic": "TCZ.T001-REOL"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "0cd3ed30-1bb0-3064-a486-f88ad651da7b",
+        "mnemonic": "TE.T001-UHTI-V1",
+        "name": "TE.T001-UHTI-V1",
+        "longName": "TE.T001-UHTI-V1",
+        "direction": "BOTH",
+        "type": "INPUT",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "0a2f7486-33c5-3b3c-b77a-67bbe9cd1582",
+        "trainDetectorMnemonic": "CV.ER-REOL-TART_REOL",
+        "circulationTrack": "195525e0-8cc0-36f0-8bba-4bba8ed51c86",
+        "circulationTrackMnemonic": "TCK.ER-T001-LANG9-REOL-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "5f979cde-301d-34e9-9c18-78038da78f74",
+        "tczMnemonic": "TCZ.T001-UHTI"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "ea299351-4d06-38c6-b9ac-e70b3c276fec",
+        "mnemonic": "TE.T001-VALM-V1.2",
+        "name": "TE.T001-VALM-V1.2",
+        "longName": "TE.T001-VALM-V1.2",
+        "direction": "EVEN",
+        "type": "REGISTER",
+        "node": null,
+        "nodeMnemonic": null,
+        "trainDetector": "b4485e60-ede7-33cf-ab8d-2077c53ef3be",
+        "trainDetectorMnemonic": "CV.ER-REOL-VAKU-1AP2",
+        "circulationTrack": null,
+        "circulationTrackMnemonic": null,
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": "3b2d9051-cd44-3f95-b681-f44b2a6eff60",
+        "tczMnemonic": "TCZ.T001-VALM"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "01267a0b-b3ac-3298-a3cd-a96da7b8c5be",
@@ -3864,28 +3843,28 @@ export const TRACK_CIRCUITS = [
         "tczMnemonic": "TCZ.T001-KOID"
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
-        "id": "a26f6c79-dc9f-3878-9982-465b6ea9f365",
-        "mnemonic": "TE.T001-LAAN24-V1",
-        "name": "TE.T001-LAAN24-V1",
-        "longName": "TE.T001-LAAN24-V1",
+        "id": "b1714671-80e4-3685-8c9b-242a2ed14cd7",
+        "mnemonic": "TE.T001-KIKK64-V1",
+        "name": "TE.T001-KIKK64-V1",
+        "longName": "TE.T001-KIKK64-V1",
         "direction": "EVEN",
         "type": "OUTPUT",
-        "node": "d26a7887-85cd-3312-9122-c386148bda40",
-        "nodeMnemonic": "ND.ER-T001-LAAN24",
-        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
-        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
-        "circulationTrack": "60421f8f-10ea-3f1d-96c9-a1757247146e",
-        "circulationTrackMnemonic": "TCK.ER-T001-REBA18-LAAN24-V1",
+        "node": "eb6991bd-69ac-390f-9595-089415d30e99",
+        "nodeMnemonic": "ND.ER-T001-KIKK64",
+        "trainDetector": "e58420ab-8d93-3966-98a3-597cdc4255bf",
+        "trainDetectorMnemonic": "CV.ER-ORAV-VER-1AP1",
+        "circulationTrack": "a0d824f7-f919-3e3a-a92e-a8a7ece8430b",
+        "circulationTrackMnemonic": "TCK.ER-T001-VER-KIKK64-V1",
         "stationingTrack": null,
         "stationingTrackMnemonic": null,
         "tcz": null,
         "tczMnemonic": null
     },
     {
-        "groupId": "ER_TOPO_GLOBAL_3_1_4",
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
         "tczName": "",
         "nodeName": "",
         "id": "e5f47a84-15ff-38e5-973e-55232d9af479",
@@ -3904,5 +3883,26 @@ export const TRACK_CIRCUITS = [
         "stationingTrackMnemonic": "TCK.ER-T001-ORAV-ORAV-V6",
         "tcz": "f82c5149-dcdb-3340-b7bc-b21da4e3001a",
         "tczMnemonic": "TCZ.T001-ORAV"
+    },
+    {
+        "groupId": "ER_TOPO_GLOBAL_3_1_5",
+        "tczName": "",
+        "nodeName": "",
+        "id": "a26f6c79-dc9f-3878-9982-465b6ea9f365",
+        "mnemonic": "TE.T001-LAAN24-V1",
+        "name": "TE.T001-LAAN24-V1",
+        "longName": "TE.T001-LAAN24-V1",
+        "direction": "EVEN",
+        "type": "OUTPUT",
+        "node": "d26a7887-85cd-3312-9122-c386148bda40",
+        "nodeMnemonic": "ND.ER-T001-LAAN24",
+        "trainDetector": "9d968135-c0f7-3768-9462-08b7c3368dec",
+        "trainDetectorMnemonic": "CV.ER-REOL-REOL_VAKU",
+        "circulationTrack": "60421f8f-10ea-3f1d-96c9-a1757247146e",
+        "circulationTrackMnemonic": "TCK.ER-T001-REBA18-LAAN24-V1",
+        "stationingTrack": null,
+        "stationingTrackMnemonic": null,
+        "tcz": null,
+        "tczMnemonic": null
     }
 ]

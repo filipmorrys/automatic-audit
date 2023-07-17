@@ -1,12 +1,12 @@
 export const NODES = [
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "1cd1c545-a14b-3267-a295-795280510a79",
 		"mnemonic": "ND.ER-T001-LANG9",
 		"name": "Lange9",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084807",
+		"operativeCode": "084861",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -36,7 +36,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "cbf49637-a1ab-31c0-8cf4-593f97c080bf",
 		"mnemonic": "ND.ER-T001-VAKU",
 		"name": "Vastse-Kuuste",
@@ -90,13 +90,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "1806cb20-1110-3213-8244-1781540db58e",
 		"mnemonic": "ND.ER-T001-RUUS55",
 		"name": "Ruusa55",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "085011",
+		"operativeCode": "085030",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -126,13 +126,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "41861841-8027-3b10-a597-f6baccab40d4",
 		"mnemonic": "ND.ER-T001-REBA18",
 		"name": "Rebase18",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084911",
+		"operativeCode": "084922",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -162,7 +162,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "19b899f7-19c0-3063-8c46-a6c540e0bd37",
 		"mnemonic": "ND.ER-T001-KOID",
 		"name": "Koidula",
@@ -268,7 +268,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "084b2fab-4592-34c0-9dbf-b141fde5faba",
 		"mnemonic": "ND.ER-T001-ORAV",
 		"name": "Orava",
@@ -337,7 +337,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "0c0df3a1-6809-365a-baa7-9955503fa667",
 		"mnemonic": "ND.ER-T001-TART",
 		"name": "Tartu",
@@ -373,7 +373,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "ee2f79cf-e12a-3ee6-ad4b-81ede08f38a1",
 		"mnemonic": "ND.ER-T001-POLV",
 		"name": "Põlva",
@@ -452,13 +452,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "bd7849d9-12a5-3328-9e33-9b9df83131b3",
 		"mnemonic": "ND.ER-T001-KIID35",
 		"name": "Kiidjärve35",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084949",
+		"operativeCode": "084964",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -488,7 +488,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "82c6a023-7882-3101-945c-d2e58043b4ab",
 		"mnemonic": "ND.ER-T001-VER",
 		"name": "Veriora",
@@ -547,13 +547,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "d26a7887-85cd-3312-9122-c386148bda40",
 		"mnemonic": "ND.ER-T001-LAAN24",
 		"name": "Laane24",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084912",
+		"operativeCode": "084934",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -583,7 +583,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "9cf33885-01bd-38b7-b42f-8649b4e1a7f7",
 		"mnemonic": "ND.ER-T001-PETS",
 		"name": "Petseri",
@@ -619,7 +619,7 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "6ab9f197-a979-3615-ad50-e4a468f68d95",
 		"mnemonic": "ND.ER-T001-REOL",
 		"name": "Reola",
@@ -680,49 +680,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
-		"id": "eb6991bd-69ac-390f-9595-089415d30e99",
-		"mnemonic": "ND.ER-T001-KIKK64",
-		"name": "Kiika64",
-		"type": "LEVEL_CROSSING",
-		"priorityLevel": 5,
-		"operativeCode": "085103",
-		"urban": null,
-		"administrator": null,
-		"operationManagement": null,
-		"uicOperativecode": null,
-		"isoCountryCodeA2": null,
-		"region": null,
-		"province": null,
-		"frontier": null,
-		"radioChannel": null,
-		"shortName": "KIKK64",
-		"tczList": [
-			"TCZ.T001-KIKKA_64km_3pk"
-		],
-		"parkingTrackList": [
-			"TCK.ER-T001-KIKKA_64km_3pk-V1"
-		],
-		"commuterTrainsTraffic": false,
-		"subStation": true,
-		"observations": null,
-		"parkingTracksByTcz": {
-			"TCZ.T001-KIKKA_64km_3pk": {
-				"TCK.ER-T001-KIKKA_64km_3pk-V1": [
-					"TCK.ER-T001-KIKKA_64km_3pk-V1",
-					"cc60da9f-b181-3023-90d9-50e37b3dfbba"
-				]
-			}
-		}
-	},
-	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "4c30c41a-e995-3b4e-b266-5e271a102915",
 		"mnemonic": "ND.ER-T001-ILUM67",
 		"name": "Ilumetsa67",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "085104",
+		"operativeCode": "085118",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -752,13 +716,49 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
+		"id": "eb6991bd-69ac-390f-9595-089415d30e99",
+		"mnemonic": "ND.ER-T001-KIKK64",
+		"name": "Kiika64",
+		"type": "LEVEL_CROSSING",
+		"priorityLevel": 5,
+		"operativeCode": "085113",
+		"urban": null,
+		"administrator": null,
+		"operationManagement": null,
+		"uicOperativecode": null,
+		"isoCountryCodeA2": null,
+		"region": null,
+		"province": null,
+		"frontier": null,
+		"radioChannel": null,
+		"shortName": "KIKK64",
+		"tczList": [
+			"TCZ.T001-KIKKA_64km_3pk"
+		],
+		"parkingTrackList": [
+			"TCK.ER-T001-KIKKA_64km_3pk-V1"
+		],
+		"commuterTrainsTraffic": false,
+		"subStation": true,
+		"observations": null,
+		"parkingTracksByTcz": {
+			"TCZ.T001-KIKKA_64km_3pk": {
+				"TCK.ER-T001-KIKKA_64km_3pk-V1": [
+					"TCK.ER-T001-KIKKA_64km_3pk-V1",
+					"cc60da9f-b181-3023-90d9-50e37b3dfbba"
+				]
+			}
+		}
+	},
+	{
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "aba96bdb-5f9f-31ac-bb8d-72c6bddb0d50",
 		"mnemonic": "ND.ER-T001-HOLV50",
 		"name": "Holvandi50",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "085010",
+		"operativeCode": "085011",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -788,13 +788,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "c6dcdab8-3ee4-3fa0-b163-f574af23a6ff",
 		"mnemonic": "ND.ER-T001-VANK16",
 		"name": "Vana-Kuuste16",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084910",
+		"operativeCode": "084915",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -824,13 +824,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "3156f39a-870d-304d-b5b0-6caf31022266",
 		"mnemonic": "ND.ER-T001-TAEV38",
 		"name": "Taevaskoja38",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084950",
+		"operativeCode": "084975",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -860,13 +860,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "fdf0afd0-9f3d-36bb-8883-5da286e9f470",
 		"mnemonic": "ND.ER-T001-AARDKOID3",
 		"name": "AardlaKoid3",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084806",
+		"operativeCode": "084831",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,
@@ -896,13 +896,13 @@ export const NODES = [
 		}
 	},
 	{
-		"groupId": "ER_TOPO_GLOBAL_3_1_4",
+		"groupId": "ER_TOPO_GLOBAL_3_1_5",
 		"id": "5ff14585-ce38-317c-956e-0970df2a5b93",
 		"mnemonic": "ND.ER-T001-VALM32",
 		"name": "Valgemetsa32",
 		"type": "LEVEL_CROSSING",
 		"priorityLevel": 5,
-		"operativeCode": "084948",
+		"operativeCode": "084952",
 		"urban": null,
 		"administrator": null,
 		"operationManagement": null,

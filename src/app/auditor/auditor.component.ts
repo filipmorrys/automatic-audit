@@ -64,7 +64,7 @@ export class AuditorComponent implements OnInit{
   setPosition(i: number) {
     this.positionMessage.circulationId.id = this.circulationId;
     this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = this.trackCircuits[i].trainDetectorMnemonic;
-    this.positionMessage.currentStatus.direction = (this.trackCircuits[i].direction === 'UNDEFINED') ? 'EVEN' : this.trackCircuits[i].direction;
+    this.positionMessage.currentStatus.direction = (this.trackCircuits[i].direction === 'BOTH') ? 'EVEN' : this.trackCircuits[i].direction;
 
     this.message = JSON.stringify(this.positionMessage);
     this.copyMessage();
