@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AuditorComponent } from './auditor/auditor.component';
 import { AuthGuard } from './guard/auth.guard';
 import { initializeKeycloak } from './keycloak/keycloak-init.factory';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auditor', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AuditorComponent
+    AuditorComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
