@@ -1,11 +1,20 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppComponent } from './app.component';
 import { AuditorComponent } from './auditor/auditor.component';
-import { FormsModule } from '@angular/forms';
-import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptor } from './auth/auth.interceptor';
+import { AuthGuard } from './guard/auth.guard';
+import { initializeKeycloak } from './keycloak/keycloak-init.factory';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'auditor', pathMatch: 'full' },
+  { path: 'auditor', canActivate: [ AuthGuard ], component: AuditorComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   declarations: [
@@ -14,14 +23,17 @@ import { AuthInterceptor } from './auth/auth.interceptor';
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
+    KeycloakAngularModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true
+      provide: APP_INITIALIZER,
+      useFactory: initializeKeycloak,
+      multi: true,
+      deps: [KeycloakService],
     }
   ],
   bootstrap: [AppComponent]

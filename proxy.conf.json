@@ -1,7 +1,19 @@
 {
-    "/api": {
-      "target": "https://opefrvh60-tmm-activeplanmng-realtime-tmstmm.apps.k8s.mova.indra.es/api/activeplanmng/circulation/position",
-      "secure": true,
-      "changeOrigin": true
-    }
+  "/auth": {
+    "target": "https://keycloak20-test.apps.k8s.mova.indra.es",
+    "secure": true,
+    "logLevel": "info",
+    "pathRewrite": {
+      "^/auth": ""
+    },
+    "changeOrigin": true
+  },
+  "/api": {
+    "target": "https://opefrvh60-tmm-activeplanmng-realtime-tmstmm.apps.k8s.mova.indra.es",
+    "secure": true,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
   }
+}

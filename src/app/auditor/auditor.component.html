@@ -30,7 +30,8 @@
                     <td>{{ tc.nodeName }}</td>
                     <td>{{ tc.direction }}</td>
                     <td>
-                        <a href="#" (click)="setPosition(i)">Copy</a>
+                        <button (click)="sendPosition(i)">Send</button>
+                        <button (click)="setPosition(i)">Copy</button>
                     </td>
                 </tr>
             </tbody>

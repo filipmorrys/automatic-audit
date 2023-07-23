@@ -58,7 +58,7 @@ export class AuditorComponent implements OnInit{
 
 
   sendPosition(i: number) {
-    this.auditor.sendPosition(this.circulationId, "ODD", this.trackCircuits[i].mnemonic);
+    this.auditor.sendPosition(this.circulationId, "ODD", this.trackCircuits[i].trainDetectorMnemonic);
   }
 
   setPosition(i: number) {
