@@ -1,0 +1,36 @@
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tr:hover {
+  background-color: antiquewhite;
+}
+
+th {
+  background-color: aquamarine;
+}
+
+input {
+  display: block;
+  min-width: 300px;
+  height: 2rem;
+}
+
+textarea {
+  display: block;
+  min-width: 300px;
+}
+
+.content {
+  position: relative;
+}
+
+.audit-message {
+  display: flex;
+  padding: 1rem;
+}
+
+.panel-circulation-id {
+  margin-right: 1rem;
+}
