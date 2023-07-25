@@ -10,10 +10,12 @@ import { AuditorComponent } from './auditor/auditor.component';
 import { AuthGuard } from './guard/auth.guard';
 import { initializeKeycloak } from './keycloak/keycloak-init.factory';
 import { HeaderComponent } from './header/header.component';
+import { CirculationsComponent } from './circulations/circulations.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auditor', pathMatch: 'full' },
   { path: 'auditor', canActivate: [ AuthGuard ], component: AuditorComponent },
+  { path: 'circulations', canActivate: [ AuthGuard ], component: CirculationsComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -21,7 +23,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AuditorComponent,
-    HeaderComponent
+    HeaderComponent,
+    CirculationsComponent
   ],
   imports: [
     BrowserModule,
