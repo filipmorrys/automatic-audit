@@ -14,7 +14,7 @@ export class CirculationsComponent implements OnInit {
   circulations: any[] = [];
   currMoment!: moment.Moment;
 
-  constructor(private circulationsService: CirculationsService) {}
+  constructor(private circulationsService: CirculationsService) { }
 
   ngOnInit(): void {
     this.currMoment = moment().utc().startOf('day');
@@ -43,5 +43,10 @@ export class CirculationsComponent implements OnInit {
     this.currMoment.add(1, 'd');
     this.loadCirculations();
   }
+
+  format(milis: number) {
+    return moment(milis).format('hh:mm:ss');
+  }
+
 
 }

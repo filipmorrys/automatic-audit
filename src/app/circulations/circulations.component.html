@@ -21,9 +21,9 @@
                 <tr *ngFor="let circ of circulations; let i = index">
                     <td>{{ circ.originNumber }}</td>
                     <td>{{ circ.originTczName }}</td>
-                    <td>{{ circ.originTczDateTime }}</td>
+                    <td>{{ format(circ.originTczDateTime) }}</td>
                     <td>{{ circ.destinationTczName }}</td>
-                    <td>{{ circ.destinationTczDateTime }}</td>
+                    <td>{{ format(circ.destinationTczDateTime) }}</td>
                     <td>
                         <button>Audit</button>
                     </td>
