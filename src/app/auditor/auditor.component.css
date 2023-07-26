@@ -34,3 +34,12 @@ textarea {
 .panel-circulation-id {
     margin-right: 1rem;
 }
+
+
+button {
+    background-color: green;
+    font-size: medium;
+    color: aliceblue;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }

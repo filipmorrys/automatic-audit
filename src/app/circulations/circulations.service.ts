@@ -12,7 +12,9 @@ export class CirculationsService {
 
   constructor(private http: HttpClient) {}
 
-  getCirculations(): Observable<any> {
+  getCirculations(applicationDay: number): Observable<any> {
+    let f = FILTER;
+    f.filter.conditions[0].condition.value = '' + applicationDay;
     return this.http.post(URL, FILTER);
   }
 }

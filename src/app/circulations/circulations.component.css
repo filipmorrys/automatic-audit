@@ -34,3 +34,20 @@ textarea {
 .panel-circulation-id {
   margin-right: 1rem;
 }
+
+.circulations-header {
+  display: flex;
+  align-items: center;
+}
+
+.current-day {
+  margin: 1rem;
+}
+
+
+button {
+  background-color: green;
+  font-size: medium;
+  color: aliceblue;
+  padding: 0.5rem;
+}

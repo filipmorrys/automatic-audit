@@ -1,29 +1,35 @@
-<div class="content">
-  <div class="table-events">
-      <table>
-          <thead>
-              <tr>
-                  <th>NUMBER</th>
-                  <th>ORIGIN</th>
-                  <th>ORIGIN HOUR</th>
-                  <th>DESTINATION</th>
-                  <th>DESTINATION HOUR</th>
-                  <th>ACTION</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr *ngFor="let circ of circulations; let i = index">
-                  <td>{{ circ.originNumber }}</td>
-                  <td>{{ circ.originTczName }}</td>
-                  <td>{{ circ.originTczDateTime }}</td>
-                  <td>{{ circ.destinationTczName }}</td>
-                  <td>{{ circ.destinationTczDateTime }}</td>
-                  <td>
-                      <button>Audit</button>
-                  </td>
-              </tr>
-          </tbody>
+<div class="circulations-header">
+    <div class="previous-day"><button (click)="previousDay()">Previo</button></div>
+    <div class="current-day"><h2>Circulaciones de {{ currenDay() }}</h2></div>
+    <div class="next-day"><button (click)="nextDay()">Siguiente</button></div>
+</div>
 
-      </table>
-  </div>
+<div class="content">
+    <div class="table-events">
+        <table>
+            <thead>
+                <tr>
+                    <th>NUMBER</th>
+                    <th>ORIGIN</th>
+                    <th>ORIGIN HOUR</th>
+                    <th>DESTINATION</th>
+                    <th>DESTINATION HOUR</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let circ of circulations; let i = index">
+                    <td>{{ circ.originNumber }}</td>
+                    <td>{{ circ.originTczName }}</td>
+                    <td>{{ circ.originTczDateTime }}</td>
+                    <td>{{ circ.destinationTczName }}</td>
+                    <td>{{ circ.destinationTczDateTime }}</td>
+                    <td>
+                        <button>Audit</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>
