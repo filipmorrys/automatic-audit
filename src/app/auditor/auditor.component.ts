@@ -4,13 +4,14 @@ import { POSITION_MESSAGE } from './position.message';
 import { AuditorService } from './auditor.service';
 import { NODES } from './nodes';
 import { TCZS } from './tczs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-auditor',
   templateUrl: './auditor.component.html',
   styleUrls: ['./auditor.component.css']
 })
-export class AuditorComponent implements OnInit{
+export class AuditorComponent implements OnInit {
 
   trackCircuits = TRACK_CIRCUITS;
   circulationId: string = '';
@@ -18,9 +19,17 @@ export class AuditorComponent implements OnInit{
   message = '';
   @ViewChild("textMessage") textMessage!: ElementRef;
 
-  constructor(private auditor: AuditorService) {}
+  constructor(private auditor: AuditorService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.activatedRoute.queryParams.subscribe(params => {
+      if (params['circulationId']) {
+        this.circulationId = params['circulationId'];
+      }
+    });
+      
+
     this.trackCircuits.forEach(tc => {
       /**
        * Completar la información del nodo
@@ -77,8 +86,9 @@ export class AuditorComponent implements OnInit{
       document.execCommand('copy');
       this.textMessage.nativeElement.setSelectionRange(0, 0);
     }, 100);
-    
+
   }
+
 }
 
 function compare(a: any, b: any) {
@@ -91,6 +101,7 @@ function compare(a: any, b: any) {
       return -1;
     } else {
       return 1;
-    }  
+    }
   }
+
 }
