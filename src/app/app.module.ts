@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { CirculationsComponent } from './circulations/circulations.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'auditor', pathMatch: 'full' },
+  { path: '', redirectTo: 'circulations', pathMatch: 'full' },
   { path: 'auditor', canActivate: [ AuthGuard ], component: AuditorComponent },
   { path: 'circulations', canActivate: [ AuthGuard ], component: CirculationsComponent },
   { path: '**', redirectTo: '' }
