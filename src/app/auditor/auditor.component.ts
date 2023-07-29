@@ -6,6 +6,7 @@ import { NODES } from './nodes';
 import { TCZS } from './tczs';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subscription, debounceTime, fromEvent } from 'rxjs';
+import { TopologyService } from './topology.service';
 
 @Component({
   selector: 'app-auditor',
@@ -20,20 +21,21 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
   circulationName: string = 'N/A';
   positionMessage = POSITION_MESSAGE;
   message = '';
-  @ViewChild('searcher') searcherElement: any; 
+  @ViewChild('searcher') searcherElement: any;
   searcher$!: Observable<string>;
   searcherSubscription!: Subscription;
 
 
   @ViewChild("textMessage") textMessage!: ElementRef;
 
-  constructor(private auditor: AuditorService, private activatedRoute: ActivatedRoute) { }
-  
+  constructor(private auditor: AuditorService, private topologyService: TopologyService, private activatedRoute: ActivatedRoute) { }
+
   ngOnDestroy(): void {
     if (this.searcherSubscription) {
       this.searcherSubscription.unsubscribe();
     }
   }
+  
   ngAfterViewInit(): void {
     console.log('searcherElement', this.searcherElement);
     this.searcher$ = fromEvent(this.searcherElement.nativeElement, 'keyup');
@@ -51,7 +53,19 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       || tc.tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tc.nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
   }
+
   ngOnInit(): void {
+
+    /*
+    this.topologyService.loadEmmiter.subscribe(
+      ev => {
+        if (ev === 'COMPLETED') {
+          this.filteredTrackCircuits = this.topologyService.trackCircuits;
+        }
+      }
+    );
+    */
+    this.topologyService.loadTopology();
 
     this.activatedRoute.queryParams.subscribe(params => {
       if (params['circulationId']) {
@@ -61,7 +75,7 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
         this.circulationName = params['circulationName'];
       }
     });
-      
+
 
     this.trackCircuits.forEach(tc => {
       /**
