@@ -5,6 +5,9 @@
 </div>
 
 <div class="content">
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="Buscar..." #searcher>
+    </div>
     <div class="table-events">
         <table>
             <thead>
@@ -18,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let circ of circulations; let i = index">
+                <tr *ngFor="let circ of filteredCirculations; let i = index">
                     <td>{{ circ.originNumber }}</td>
                     <td>{{ circ.originTczName }}</td>
                     <td>{{ format(circ.originTczDateTime) }}</td>

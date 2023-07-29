@@ -1,26 +1,55 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TRACK_CIRCUITS } from './trackcircuits';
 import { POSITION_MESSAGE } from './position.message';
 import { AuditorService } from './auditor.service';
 import { NODES } from './nodes';
 import { TCZS } from './tczs';
 import { ActivatedRoute } from '@angular/router';
+import { Observable, Subscription, debounceTime, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-auditor',
   templateUrl: './auditor.component.html',
   styleUrls: ['./auditor.component.css']
 })
-export class AuditorComponent implements OnInit {
+export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
 
   trackCircuits = TRACK_CIRCUITS;
+  filteredTrackCircuits: any[] = [];
   circulationId: string = '';
   positionMessage = POSITION_MESSAGE;
   message = '';
+  @ViewChild('searcher') searcherElement: any; 
+  searcher$!: Observable<string>;
+  searcherSubscription!: Subscription;
+
+
   @ViewChild("textMessage") textMessage!: ElementRef;
 
   constructor(private auditor: AuditorService, private activatedRoute: ActivatedRoute) { }
+  
+  ngOnDestroy(): void {
+    if (this.searcherSubscription) {
+      this.searcherSubscription.unsubscribe();
+    }
+  }
+  ngAfterViewInit(): void {
+    console.log('searcherElement', this.searcherElement);
+    this.searcher$ = fromEvent(this.searcherElement.nativeElement, 'keyup');
+    this.searcher$.pipe(
+      debounceTime(200)
+    );
+    this.searcherSubscription = this.searcher$.subscribe(ev => {
+      this.filteredTrackCircuits = this.trackCircuits.filter(tc => this.matchSearch(tc))
+    });
+  }
 
+  matchSearch(tc: any): boolean {
+    let value = this.searcherElement.nativeElement.value;
+    return tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
+      || tc.tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
+      || tc.nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
+  }
   ngOnInit(): void {
 
     this.activatedRoute.queryParams.subscribe(params => {
@@ -63,6 +92,7 @@ export class AuditorComponent implements OnInit {
       }
     });
     this.trackCircuits.sort(compare);
+    this.filteredTrackCircuits = this.trackCircuits;
   }
 
 
