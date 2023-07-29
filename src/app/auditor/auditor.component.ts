@@ -17,6 +17,7 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
   trackCircuits = TRACK_CIRCUITS;
   filteredTrackCircuits: any[] = [];
   circulationId: string = '';
+  circulationName: string = 'N/A';
   positionMessage = POSITION_MESSAGE;
   message = '';
   @ViewChild('searcher') searcherElement: any; 
@@ -55,6 +56,9 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
     this.activatedRoute.queryParams.subscribe(params => {
       if (params['circulationId']) {
         this.circulationId = params['circulationId'];
+      }
+      if (params['circulationName']) {
+        this.circulationName = params['circulationName'];
       }
     });
       
@@ -97,13 +101,13 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
 
 
   sendPosition(i: number) {
-    this.auditor.sendPosition(this.circulationId, "ODD", this.trackCircuits[i].trainDetectorMnemonic);
+    this.auditor.sendPosition(this.circulationId, "ODD", this.filteredTrackCircuits[i].trainDetectorMnemonic);
   }
 
   setPosition(i: number) {
     this.positionMessage.circulationId.id = this.circulationId;
-    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = this.trackCircuits[i].trainDetectorMnemonic;
-    this.positionMessage.currentStatus.direction = (this.trackCircuits[i].direction === 'BOTH') ? 'EVEN' : this.trackCircuits[i].direction;
+    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = this.filteredTrackCircuits[i].trainDetectorMnemonic;
+    this.positionMessage.currentStatus.direction = (this.filteredTrackCircuits[i].direction === 'BOTH') ? 'EVEN' : this.filteredTrackCircuits[i].direction;
 
     this.message = JSON.stringify(this.positionMessage);
     this.copyMessage();

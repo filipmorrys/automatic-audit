@@ -1,12 +1,13 @@
 
 import { KeycloakService } from "keycloak-angular";
+import { environment } from "../environments/environments";
 
 export function initializeKeycloak(keycloak: KeycloakService) {
     console.log("initializeKeycloak");
     return () =>
         keycloak.init({
             config: {
-                url: 'https://keycloak20-test.apps.k8s.mova.indra.es' + '/auth',
+                url: environment.authUrl + '/auth',
                 realm: 'RealmSecurity',
                 clientId: 'frontend-security',
             },

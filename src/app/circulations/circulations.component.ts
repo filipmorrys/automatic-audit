@@ -83,9 +83,9 @@ export class CirculationsComponent implements OnInit, AfterViewInit, OnDestroy {
     return moment(milis).format('hh:mm:ss');
   }
 
-  auditCirculation(circulationId: string) {
+  auditCirculation(circulationId: string, circulationName: string) {
     console.log('Auditar circulacion', circulationId);
-    this.router.navigate(['/auditor'], { queryParams: { 'circulationId': circulationId } });
+    this.router.navigate(['/auditor'], { queryParams: { 'circulationId': circulationId, 'circulationName': circulationName } });
   }
 
 }

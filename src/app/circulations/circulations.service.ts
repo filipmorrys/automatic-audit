@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FILTER } from './filter';
+import { environment } from '../environments/environments';
 
-const URL = 'https://opefrvh60-tmm-activeplanmng-dataaccess-tmstmm.apps.k8s.mova.indra.es/api/activeplanmng/circulation-info/search';
+const URL = environment.dataaccessUrl + '/api/activeplanmng/circulation-info/search';
 
 @Injectable({
   providedIn: 'root'

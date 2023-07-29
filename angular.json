@@ -45,13 +45,61 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
+            "tmstmm": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.tmstmm.ts"
+                }
+              ]
+            },
+            "tmsint": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.tmsint.ts"
+                }
+              ]
+            },
+            "irlint": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.irlint.ts"
+                }
+              ]
+            },
+            "estint": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.estint.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -62,11 +110,24 @@
             "production": {
               "browserTarget": "automatic-audit:build:production"
             },
-            "development": {
-              "browserTarget": "automatic-audit:build:development"
+            "tmstmm": {
+              "browserTarget": "automatic-audit:build:tmstmm",
+              "proxyConfig": "proxy.conf.tmstmm.json"
+            },
+            "tmsint": {
+              "browserTarget": "automatic-audit:build:tmsint",
+              "proxyConfig": "proxy.conf.tmsint.json"
+            },
+            "estint": {
+              "browserTarget": "automatic-audit:build:estint",
+              "proxyConfig": "proxy.conf.estint.json"
+            },
+            "irlint": {
+              "browserTarget": "automatic-audit:build:irlint",
+              "proxyConfig": "proxy.conf.irlint.json"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "tmstmm"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
