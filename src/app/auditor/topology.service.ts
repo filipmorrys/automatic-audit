@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { EventEmitter, Injectable } from '@angular/core';
+import { EventEmitter, Injectable, OnInit } from '@angular/core';
 import { Observable, from, map } from 'rxjs';
 import { environment } from '../environments/environments';
 
@@ -14,12 +14,14 @@ export class TopologyService {
 
   loadEmmiter: EventEmitter<string> = new EventEmitter();
 
+
+
   nodes: any[] = [];
   tczs: any[] = [];
   topoEvents: any[] = [];
   trackCircuits: any[] = [];
-
-  loaded: string[] = [];
+  loaded: boolean = false;
+  eventsReceived: string[] = [];
 
   constructor(private http: HttpClient) { }
 
@@ -28,11 +30,11 @@ export class TopologyService {
     this.loadEmmiter.subscribe(
       ev => {
         console.log(ev + " loaded");
-        this.loaded.push(ev);
-        if (this.loaded.length === 3) {
+        this.eventsReceived.push(ev);
+        if (this.eventsReceived.length === 3) {
           this.mergeTopology();
         } 
-        if (ev === "COMPLETE") {
+        if (ev === "COMPLETED") {
           console.log("Se ha cargado la topología", this.trackCircuits);
         }
       }
@@ -79,7 +81,11 @@ export class TopologyService {
     ).subscribe({
       next: tc => this.trackCircuits.push(tc), 
       error: err => console.log(err),
-      complete: () => this.loadEmmiter.emit("COMPLETE")
+      complete: () => {
+        this.trackCircuits.sort(compare);
+        this.loadEmmiter.emit("COMPLETED");
+        this.loaded = true;
+      }
     });
   }
 
@@ -120,4 +126,18 @@ export class TopologyService {
   }
 
 
+}
+
+function compare(a: any, b: any) {
+  if (a.nodeName > b.nodeName) {
+    return -1;
+  } else if (a.nodeName < b.nodeName) {
+    return 1;
+  } else {
+    if (a.tczName > b.tczName) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }
 }

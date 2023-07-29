@@ -30,11 +30,11 @@
             </thead>
             <tbody>
                 <tr *ngFor="let tc of filteredTrackCircuits; let i = index">
-                    <td>{{ tc.trainDetectorMnemonic }}</td>
-                    <td>{{ tc.type }}</td>
+                    <td>{{ tc.topoEvent.trainDetectorMnemonic }}</td>
+                    <td>{{ tc.topoEvent.type }}</td>
                     <td>{{ tc.tczName }}</td>
                     <td>{{ tc.nodeName }}</td>
-                    <td>{{ tc.direction }}</td>
+                    <td>{{ tc.topoEvent.direction }}</td>
                     <td>
                         <button (click)="sendPosition(i)">Send</button>
                         <button (click)="setPosition(i)">Copy</button>

@@ -15,7 +15,6 @@ import { TopologyService } from './topology.service';
 })
 export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  trackCircuits = TRACK_CIRCUITS;
   filteredTrackCircuits: any[] = [];
   circulationId: string = '';
   circulationName: string = 'N/A';
@@ -43,29 +42,33 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       debounceTime(200)
     );
     this.searcherSubscription = this.searcher$.subscribe(ev => {
-      this.filteredTrackCircuits = this.trackCircuits.filter(tc => this.matchSearch(tc))
+      this.filteredTrackCircuits = this.topologyService.trackCircuits.filter(tc => this.matchSearch(tc))
     });
   }
 
   matchSearch(tc: any): boolean {
     let value = this.searcherElement.nativeElement.value;
-    return tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
+    return tc.topoEvent.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tc.tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tc.nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
   }
 
+  /**
+   * On Init
+   */
   ngOnInit(): void {
-
-    /*
-    this.topologyService.loadEmmiter.subscribe(
-      ev => {
-        if (ev === 'COMPLETED') {
-          this.filteredTrackCircuits = this.topologyService.trackCircuits;
+    if (!this.topologyService.loaded) {
+      this.topologyService.loadEmmiter.subscribe(
+        ev => {
+          if (ev === 'COMPLETED') {
+            this.filteredTrackCircuits = this.topologyService.trackCircuits;
+          }
         }
-      }
-    );
-    */
-    this.topologyService.loadTopology();
+      );
+      this.topologyService.loadTopology();
+    } else {
+      this.filteredTrackCircuits = this.topologyService.trackCircuits;
+    }
 
     this.activatedRoute.queryParams.subscribe(params => {
       if (params['circulationId']) {
@@ -76,52 +79,19 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       }
     });
 
-
-    this.trackCircuits.forEach(tc => {
-      /**
-       * Completar la información del nodo
-       */
-      if (!tc.nodeMnemonic) {
-        let node = NODES.find(n => {
-          if (tc.tczMnemonic) {
-            return n.tczList.includes(tc.tczMnemonic);
-          }
-          return false;
-        });
-        if (node) {
-          tc.nodeMnemonic = node.mnemonic;
-          tc.nodeName = node.name;
-        }
-      } else {
-        let node = NODES.find(n => n.mnemonic === tc.nodeMnemonic);
-        if (node) {
-          tc.nodeName = node.name;
-        }
-      }
-
-      /**
-       * Completar la información del TCZ
-       */
-      if (tc.tczMnemonic) {
-        let tcz = TCZS.find(t => t.mnemonic === tc.tczMnemonic);
-        if (tcz) {
-          tc.tczName = tcz.name;
-        }
-      }
-    });
-    this.trackCircuits.sort(compare);
-    this.filteredTrackCircuits = this.trackCircuits;
   }
 
 
   sendPosition(i: number) {
-    this.auditor.sendPosition(this.circulationId, "ODD", this.filteredTrackCircuits[i].trainDetectorMnemonic);
+    let tc = this.filteredTrackCircuits[i];
+    this.auditor.sendPosition(this.circulationId, tc.topoEvent.direction, tc.topoEvent.trainDetectorMnemonic);
   }
 
   setPosition(i: number) {
+    let tc = this.filteredTrackCircuits[i];
     this.positionMessage.circulationId.id = this.circulationId;
-    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = this.filteredTrackCircuits[i].trainDetectorMnemonic;
-    this.positionMessage.currentStatus.direction = (this.filteredTrackCircuits[i].direction === 'BOTH') ? 'EVEN' : this.filteredTrackCircuits[i].direction;
+    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = tc.topoEvent.trainDetectorMnemonic;
+    this.positionMessage.currentStatus.direction = (tc.topoEvent.direction === 'BOTH') ? 'EVEN' : tc.topoEvent.direction;
 
     this.message = JSON.stringify(this.positionMessage);
     this.copyMessage();
@@ -135,21 +105,6 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       this.textMessage.nativeElement.setSelectionRange(0, 0);
     }, 100);
 
-  }
-
-}
-
-function compare(a: any, b: any) {
-  if (a.nodeName > b.nodeName) {
-    return -1;
-  } else if (a.nodeName < b.nodeName) {
-    return 1;
-  } else {
-    if (a.tczName > b.tczName) {
-      return -1;
-    } else {
-      return 1;
-    }
   }
 
 }
