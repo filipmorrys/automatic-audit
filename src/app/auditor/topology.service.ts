@@ -7,26 +7,63 @@ const NODES_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/
 const TCZS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/tcz/" + environment.topologyVersion;
 const TOPO_EVENTS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/topologyEvent/" + environment.topologyVersion;
 
+/**
+ * Servicio de topología. Consulta por http los elementos topológicos necesarios para
+ * formar los circuitos de vía. Todos estos datos quedan persistidos en el servicio.  
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class TopologyService {
 
+  /**
+   * Eventos de carga del servicio de topología. Se dan cuando se carga alguna
+   * de las entidades:
+   * - Cuando se cargan los nodos se emite un evento 'NODES'
+   * - Cuando se cargan los TCZs se emite un evento 'TCZs'
+   * - Cuando se cargan los topology events se emite un evento 'TOPO_EVENTS'
+   * - Cuando se carga toda la topología se emite un evento 'COMPLETED'
+   */
   loadEmmiter: EventEmitter<string> = new EventEmitter();
-
-
-
-  nodes: any[] = [];
-  tczs: any[] = [];
-  topoEvents: any[] = [];
+  /**
+   * Lista temporal en la que almacenamos los nodos
+   */
+  private nodes: any[] = [];
+  /**
+   * Lista temporal en la que almacenamos los TCZs
+   */
+  private tczs: any[] = [];
+  /**
+   * Lista temporal en la que almacenamos los eventos topologicos
+   */
+  private topoEvents: any[] = [];
+  /**
+   * Todos los eventos de carga emitidos se van almacenando aqui para
+   * saber lo que se ha cargado
+   */
+  private eventsReceived: string[] = [];
+  /**
+   * Lista de circuitos de vía con los eventos topológicos. Esta es la 
+   * lista que nos interesa para poder trabajar
+   */
   trackCircuits: any[] = [];
+  /**
+   * Flag que indica que la topología está cargada. 
+   */
   loaded: boolean = false;
-  eventsReceived: string[] = [];
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * Carga la topología en la lista trackCircuits. 
+   */
   loadTopology() {
-
+    /**
+     * Primero de todo nos suscribimos a los eventos de carga para 
+     * saber cuando se están cargando las distintas entidades topológicas.
+     * Una vez que estén todas las entidades que necesitamos lanzamos el 
+     * merge de la topología. 
+     */
     this.loadEmmiter.subscribe(
       ev => {
         console.log(ev + " loaded");
@@ -35,6 +72,9 @@ export class TopologyService {
           this.mergeTopology();
         } 
         if (ev === "COMPLETED") {
+          this.nodes = [];
+          this.tczs = [];
+          this.topoEvents = [];
           console.log("Se ha cargado la topología", this.trackCircuits);
         }
       }
@@ -65,6 +105,10 @@ export class TopologyService {
     });
   }
 
+  /**
+   * Mergea todos los elementos topológicos para formar el
+   * array trackCircuits.
+   */
   mergeTopology() {
     console.log("Mergeando topología");
 
@@ -83,8 +127,8 @@ export class TopologyService {
       error: err => console.log(err),
       complete: () => {
         this.trackCircuits.sort(compare);
-        this.loadEmmiter.emit("COMPLETED");
         this.loaded = true;
+        this.loadEmmiter.emit("COMPLETED");
       }
     });
   }
@@ -128,6 +172,12 @@ export class TopologyService {
 
 }
 
+/**
+ * Fución que compara dos trackCircuits.
+ * @param a primer trackCircuit
+ * @param b segundo trackCircuit
+ * @returns -1 si a es mayor, 1 en caso contrario
+ */
 function compare(a: any, b: any) {
   if (a.nodeName > b.nodeName) {
     return -1;
