@@ -5,7 +5,8 @@ header {
 }
 
 .header-tittle {
-    font-size: xx-large;
+    font-size: 3rem;
+    font-family: Calibri;
     font-weight: bolder;
     color: aliceblue;
     padding: 1rem;
@@ -18,10 +19,11 @@ ul {
 }
 
 nav li {
-    padding: 1rem;
+    padding: 1.5rem;
     display: inline-block;
     text-decoration: none;
     color: aliceblue;
+    font-size: 2rem;
 }
 
 nav li:hover {
