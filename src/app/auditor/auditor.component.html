@@ -12,6 +12,11 @@
         <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{ message }}</textarea>
     </div>
 </div>
+<div class="delete-position">
+    Borrado de posición:
+    <button (click)="sendDeletePosition()">Send</button>
+    <button (click)="setDeletePosition()">Copy</button>
+</div>
 <div class="content">
     <div class="search">
         <input type="text" name="search" id="search" placeholder="Buscar..." #searcher>

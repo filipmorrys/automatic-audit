@@ -13,6 +13,7 @@
             <thead>
                 <tr>
                     <th>NUMBER</th>
+                    <th>STATE</th>
                     <th>ORIGIN</th>
                     <th>ORIGIN HOUR</th>
                     <th>DESTINATION</th>
@@ -23,6 +24,7 @@
             <tbody>
                 <tr *ngFor="let circ of filteredCirculations; let i = index">
                     <td>{{ circ.originNumber }}</td>
+                    <td>{{ circ.state }}</td>
                     <td>{{ circ.originTczName }}</td>
                     <td>{{ format(circ.originTczDateTime) }}</td>
                     <td>{{ circ.destinationTczName }}</td>

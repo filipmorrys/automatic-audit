@@ -4,6 +4,7 @@ import { Observable, Subscription, debounceTime, fromEvent } from 'rxjs';
 import { AuditorService } from './auditor.service';
 import { POSITION_MESSAGE } from './position.message';
 import { TopologyService } from './topology.service';
+import { DELETE_POSITION_MESSAGE } from './delete-position.message';
 
 @Component({
   selector: 'app-auditor',
@@ -28,6 +29,12 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
    * plantilla de mensaje de posición
    */
   positionMessage = POSITION_MESSAGE;
+
+  /**
+   * plantilla de mensaje de borrado de posición
+   */
+  deletePositionMessage = DELETE_POSITION_MESSAGE;
+
   /**
    * Campo de texto para buscar elementos de la tabla
    */
@@ -117,6 +124,19 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
     return tc.topoEvent.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tc.tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tc.nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
+  }
+
+  /**
+   * Envía un mensaje de borrado de posición a una circulación. 
+   */
+  sendDeletePosition() {
+    this.auditor.sendDeletePosition(this.circulationId);
+  }
+
+  setDeletePosition() {
+    this.deletePositionMessage.id = this.circulationId;
+    this.message = JSON.stringify(this.deletePositionMessage);
+    this.copyMessage();
   }
 
   /**
