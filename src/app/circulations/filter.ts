@@ -9,13 +9,6 @@ export const FILTER = {
           "operator": "EQUALS",
           "value": "1690243200000"
         }
-      },
-      {
-        "condition": {
-          "field": "planned",
-          "operator": "EQUALS",
-          "value": true
-        }
       }
     ]
   },
