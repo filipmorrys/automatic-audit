@@ -1,0 +1,19 @@
+{
+    "/auth": {
+      "target": "https://opefrvirl-dev-keycloak20-test.apps.k8s.mova.indra.es",
+      "secure": true,
+      "logLevel": "info",
+      "pathRewrite": {
+        "^/auth": ""
+      },
+      "changeOrigin": true
+    },
+    "/api": {
+      "target": "https://opefrvh60-tmm-activeplanmng-realtime-irltmm.apps.k8s.mova.indra.es",
+      "secure": true,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "changeOrigin": true
+    }
+  }

@@ -87,6 +87,20 @@
                 }
               ]
             },
+            "irltmm": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.irltmm.ts"
+                }
+              ]
+            },
             "estint": {
               "buildOptimizer": false,
               "optimization": false,
@@ -121,6 +135,10 @@
             "estint": {
               "browserTarget": "automatic-audit:build:estint",
               "proxyConfig": "proxy.conf.estint.json"
+            },
+            "irltmm": {
+              "browserTarget": "automatic-audit:build:irltmm",
+              "proxyConfig": "proxy.conf.irltmm.json"
             },
             "irlint": {
               "browserTarget": "automatic-audit:build:irlint",
