@@ -28,18 +28,20 @@
                     <th>TRAIN DETECTOR</th>
                     <th>EVENT TYPE</th>
                     <th>TCZ</th>
-                    <th>NODE</th>
+                    <th>NODE / ARC</th>
+                    <th>KP</th>
                     <th>DIRECTION</th>
                     <th>ACTION</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let tc of filteredTrackCircuits; let i = index">
-                    <td>{{ tc.topoEvent.trainDetectorMnemonic }}</td>
-                    <td>{{ tc.topoEvent.type }}</td>
+                <tr *ngFor="let tc of filteredTrainDetectors; let i = index">
+                    <td>{{ tc.trainDetectorMnemonic }}</td>
+                    <td>{{ tc.type }}</td>
                     <td>{{ tc.tczName }}</td>
-                    <td>{{ tc.nodeName }}</td>
-                    <td>{{ tc.topoEvent.direction }}</td>
+                    <td>{{ tc.nodeName ? tc.nodeName : tc.arcName }}</td>
+                    <td>{{ tc.pk }}</td>
+                    <td>{{ tc.direction }}</td>
                     <td>
                         <button (click)="sendPosition(i)">Send</button>
                         <button (click)="setPosition(i)">Copy</button>

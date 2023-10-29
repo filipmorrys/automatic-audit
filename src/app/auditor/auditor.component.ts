@@ -5,6 +5,7 @@ import { AuditorService } from './auditor.service';
 import { POSITION_MESSAGE } from './position.message';
 import { TopologyService } from './topology.service';
 import { DELETE_POSITION_MESSAGE } from './delete-position.message';
+import { ITrackCircuit } from './interfaces';
 
 @Component({
   selector: 'app-auditor',
@@ -16,7 +17,7 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
   /** 
    * Contiene los eventos filtrables que se van a mostrar en la tabla
    */
-  filteredTrackCircuits: any[] = [];
+  filteredTrainDetectors: ITrackCircuit[] = [];
   /** 
    * Identificador de la circulación sobre la que enviamos pisados
    */  
@@ -71,13 +72,13 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       this.topologyService.loadEmmiter.subscribe(
         ev => {
           if (ev === 'COMPLETED') {
-            this.filteredTrackCircuits = this.topologyService.trackCircuits;
+            this.filteredTrainDetectors = this.topologyService.trainDetectors;
           }
         }
       );
       this.topologyService.loadTopology();
     } else {
-      this.filteredTrackCircuits = this.topologyService.trackCircuits;
+      this.filteredTrainDetectors = this.topologyService.trainDetectors;
     }
 
     this.activatedRoute.queryParams.subscribe(params => {
@@ -110,7 +111,7 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       debounceTime(200)
     );
     this.searcherSubscription = this.searcher$.subscribe(ev => {
-      this.filteredTrackCircuits = this.topologyService.trackCircuits.filter(tc => this.matchSearch(tc))
+      this.filteredTrainDetectors = this.topologyService.trainDetectors.filter(tc => this.matchSearch(tc))
     });
   }
 
@@ -121,9 +122,11 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
    */
   matchSearch(tc: any): boolean {
     let value = this.searcherElement.nativeElement.value;
-    return tc.topoEvent.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
-      || tc.tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
-      || tc.nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
+    let tczName = tc.tczName ? tc.tczName : '';
+    let nodeName = tc.nodeName ? tc.nodeName : tc.arcName;
+    return tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
+      || tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
+      || nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
   }
 
   /**
@@ -144,8 +147,8 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
    * @param i índice del trackCircuit a enviar. 
    */
   sendPosition(i: number) {
-    let tc = this.filteredTrackCircuits[i];
-    this.auditor.sendPosition(this.circulationId, tc.topoEvent.direction, tc.topoEvent.trainDetectorMnemonic);
+    let tc = this.filteredTrainDetectors[i];
+    this.auditor.sendPosition(this.circulationId, tc.trainDetectorMnemonic, tc.direction);
   }
 
   /**
@@ -154,10 +157,10 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
    * @param i 
    */
   setPosition(i: number) {
-    let tc = this.filteredTrackCircuits[i];
+    let tc = this.filteredTrainDetectors[i];
     this.positionMessage.circulationId.id = this.circulationId;
-    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = tc.topoEvent.trainDetectorMnemonic;
-    this.positionMessage.currentStatus.direction = (tc.topoEvent.direction === 'BOTH') ? 'EVEN' : tc.topoEvent.direction;
+    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = tc.trainDetectorMnemonic;
+    this.positionMessage.currentStatus.direction = (!tc.direction || tc.direction === 'BOTH') ? 'EVEN' : tc.direction;
 
     this.message = JSON.stringify(this.positionMessage);
     this.copyMessage();

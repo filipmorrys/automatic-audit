@@ -2,11 +2,20 @@ import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable, OnInit } from '@angular/core';
 import { Observable, from, map } from 'rxjs';
 import { environment } from '../environments/environments';
+import { ITrackCircuit } from './interfaces';
 
 const NODES_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/node/" + environment.topologyVersion;
+const ARCS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/arc/" + environment.topologyVersion;
 const TCZS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/tcz/" + environment.topologyVersion;
 const TOPO_EVENTS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/topologyEvent/" + environment.topologyVersion;
+const TRACK_CIRCUITS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/trackcircuit/" + environment.topologyVersion;
 
+const EVENT_NODES = "NODES";
+const EVENT_ARCS = "ARCS";
+const EVENT_TCZS = "TCZS";
+const EVENT_TOPOLOGY_EVENTS = "TOPO_EVENTS";
+const EVENT_TRACK_CIRCUITS = "TRACK_CIRCUITS";
+const EVENT_COMPLETED = "COMPLETED";
 /**
  * Servicio de topología. Consulta por http los elementos topológicos necesarios para
  * formar los circuitos de vía. Todos estos datos quedan persistidos en el servicio.  
@@ -38,6 +47,15 @@ export class TopologyService {
    */
   private topoEvents: any[] = [];
   /**
+   * Lista temporal en la que almacenamos los circuitos de vía
+   */
+  private trackCircuits: any[] = [];
+
+  /**
+  * Lista temporal en la que almacenamos los arcos
+  */
+  private arcs: any[] = [];
+  /**
    * Todos los eventos de carga emitidos se van almacenando aqui para
    * saber lo que se ha cargado
    */
@@ -46,7 +64,7 @@ export class TopologyService {
    * Lista de circuitos de vía con los eventos topológicos. Esta es la 
    * lista que nos interesa para poder trabajar
    */
-  trackCircuits: any[] = [];
+  trainDetectors: ITrackCircuit[] = [];
   /**
    * Flag que indica que la topología está cargada. 
    */
@@ -68,14 +86,17 @@ export class TopologyService {
       ev => {
         console.log(ev + " loaded");
         this.eventsReceived.push(ev);
-        if (this.eventsReceived.length === 3) {
+        if (this.eventsReceived.length === 5) {
           this.mergeTopology();
-        } 
-        if (ev === "COMPLETED") {
+        }
+        if (ev === EVENT_COMPLETED) {
+          // Liberamos memoria
           this.nodes = [];
           this.tczs = [];
           this.topoEvents = [];
-          console.log("Se ha cargado la topología", this.trackCircuits);
+          this.arcs = [];
+          this.trackCircuits = []
+          console.log("Se ha cargado la topología", this.trainDetectors);
         }
       }
     );
@@ -85,7 +106,17 @@ export class TopologyService {
      */
     this.http.get<any[]>(NODES_URL).subscribe(res => {
       this.nodes = res;
-      this.loadEmmiter.emit("NODES");
+      this.loadEmmiter.emit(EVENT_NODES);
+    });
+
+    /**
+     * Carga de arcos
+     */
+    this.http.get<any[]>(ARCS_URL).subscribe(res => {
+      for (const key in res) {
+        this.arcs.push(res[key]);
+      }
+      this.loadEmmiter.emit(EVENT_ARCS);
     });
 
     /**
@@ -93,7 +124,7 @@ export class TopologyService {
      */
     this.http.get<any[]>(TCZS_URL).subscribe(res => {
       this.tczs = res;
-      this.loadEmmiter.emit("TCZS");
+      this.loadEmmiter.emit(EVENT_TCZS);
     });
 
     /**
@@ -101,75 +132,84 @@ export class TopologyService {
      */
     this.http.get<any[]>(TOPO_EVENTS_URL).subscribe(res => {
       this.topoEvents = res;
-      this.loadEmmiter.emit("TOPO_EVENTS");
+      this.loadEmmiter.emit(EVENT_TOPOLOGY_EVENTS);
     });
+
+    /**
+     * Carga de trackCircuits
+     */
+    this.http.get<any[]>(TRACK_CIRCUITS_URL).subscribe(res => {
+      this.trackCircuits = res;
+      this.loadEmmiter.emit(EVENT_TRACK_CIRCUITS);
+    });
+
   }
 
   /**
    * Mergea todos los elementos topológicos para formar el
    * array trackCircuits.
    */
-  mergeTopology() {
+  mergeTopology():ITrackCircuit[] {
+    
     console.log("Mergeando topología");
+    for (let tc of this.trackCircuits) {
+      let topoEvent = this.topoEvents.find(te => te.trainDetectorMnemonic === tc.mnemonic);
+      let node = tc.elementMacro === "ND"
+        ? this.nodes.find(n => n.mnemonic === tc.elementMacroId)
+        : null;
+      let arc = tc.elementMacro === "ARC"
+        ? this.arcs.find(a => a.id === tc.elementMacroId)
+        : null;
+      let tcz = this.findTCZ(topoEvent);
 
-    from(this.topoEvents).pipe(
-      map(te => {
-        let node = this.findNode(te);
-        let tcz = this.findTCZ(te);
-        return {
-          nodeName: node, 
-          tczName: tcz,
-          topoEvent: te
-        }
-      }),
-    ).subscribe({
-      next: tc => this.trackCircuits.push(tc), 
-      error: err => console.log(err),
-      complete: () => {
-        this.trackCircuits.sort(compare);
-        this.loaded = true;
-        this.loadEmmiter.emit("COMPLETED");
-      }
-    });
+      this.trainDetectors.push({
+        mnemonic: tc.mnemonic,
+        name: tc.name,
+        direction: topoEvent?.direction,
+        type: topoEvent?.type,
+        nodeName: node?.name,
+        nodeMnemonic: node?.mnemonic,
+        arcName: arc ? this.getArcName(arc) : undefined,
+        arcMnemonic: arc?.mnemonic,
+        trainDetectorMnemonic: tc.mnemonic,
+        circulationTrackMnemonic: topoEvent?.circulationTrackMnemonic,
+        stationingTrackMnemonic: topoEvent?.stationingTrackMnemonic,
+        tczName: tcz?.name,
+        tczMnemonic: tcz?.mnemonic,
+        pk: tc.pkBegin,
+      });
+
+    }
+    this.trainDetectors.sort(compare);
+
+    this.loadEmmiter.emit(EVENT_COMPLETED);
+
+    return [];
+
+  }
+
+  getArcName(arc: any): string {
+    let initialNode = this.nodes.find(n => n.mnemonic === arc.strNodeMnemo);
+    let finalNode = this.nodes.find(n => n.mnemonic === arc.endNodeMnemo);
+    return initialNode.name + " - " + finalNode.name;
   }
 
   /**
-   * Devuelve el nombre del TCZ al que corresponde el evento topológico
+   * Devuelve el TCZ al que corresponde un evento topológico
    * @param te
    * @returns 
    */
-  findTCZ(te: any): string {
+  findTCZ(te: any): any {
     let tcz;
+    if (!te) {
+      return tcz;
+    }
     if (te.tczMnemonic) {
       tcz = this.tczs.find(t => t.mnemonic === te.tczMnemonic);
     }
 
-    return (tcz) ? tcz.name : '';
+    return tcz;
   }
-
-  /**
-   * Devuelve el nombre del nodo al que corresponde el evento topológico
-   * @param te 
-   * @returns 
-   */
-  findNode(te: any): string {
-    let node;
-    if (!te.nodeMnemonic) {
-      node = this.nodes.find(n => {
-        if (te.tczMnemonic) {
-          return n.tczList.includes(te.tczMnemonic);
-        }
-        return false;
-      });
-    } else {
-      node = this.nodes.find(n => n.mnemonic === te.nodeMnemonic);
-    }
-
-    return (node) ? node.name : '';
-
-  }
-
-
 }
 
 /**
@@ -179,12 +219,15 @@ export class TopologyService {
  * @returns -1 si a es mayor, 1 en caso contrario
  */
 function compare(a: any, b: any) {
-  if (a.nodeName > b.nodeName) {
+  let aName = a.nodeName ? a.nodeName : a.arcName;
+  let bName = b.nodeName ? b.nodeName : b.arcName;
+
+  if (aName > bName) {
     return -1;
-  } else if (a.nodeName < b.nodeName) {
+  } else if (aName < bName) {
     return 1;
   } else {
-    if (a.tczName > b.tczName) {
+    if (aName > bName) {
       return -1;
     } else {
       return 1;
