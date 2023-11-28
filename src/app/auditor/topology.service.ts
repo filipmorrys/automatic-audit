@@ -153,32 +153,58 @@ export class TopologyService {
     
     console.log("Mergeando topología");
     for (let tc of this.trackCircuits) {
-      let topoEvent = this.topoEvents.find(te => te.trainDetectorMnemonic === tc.mnemonic);
+      let tEvents: any[] = [];
+      this.topoEvents.forEach((te: any) => {
+         if (te.trainDetectorMnemonic === tc.mnemonic) {
+          tEvents.push(te);
+         }
+      });
+
       let node = tc.elementMacro === "ND"
         ? this.nodes.find(n => n.mnemonic === tc.elementMacroId)
         : null;
       let arc = tc.elementMacro === "ARC"
         ? this.arcs.find(a => a.id === tc.elementMacroId)
         : null;
-      let tcz = this.findTCZ(topoEvent);
+      
+      if (tEvents && tEvents.length > 0) {
+        for (const te of tEvents) {
+          let auditedTcz = this.findTCZ(te);
+          let auditedNode = te.nodeMnemonic
+            ? this.findNodeByMnemo(te.nodeMnemonic)
+            : this.findNodeById(auditedTcz.nodeId);
 
-      this.trainDetectors.push({
-        mnemonic: tc.mnemonic,
-        name: tc.name,
-        direction: topoEvent?.direction,
-        type: topoEvent?.type,
-        nodeName: node?.name,
-        nodeMnemonic: node?.mnemonic,
-        arcName: arc ? this.getArcName(arc) : undefined,
-        arcMnemonic: arc?.mnemonic,
-        trainDetectorMnemonic: tc.mnemonic,
-        circulationTrackMnemonic: topoEvent?.circulationTrackMnemonic,
-        stationingTrackMnemonic: topoEvent?.stationingTrackMnemonic,
-        tczName: tcz?.name,
-        tczMnemonic: tcz?.mnemonic,
-        pk: tc.pkBegin,
-      });
-
+          this.trainDetectors.push({
+            mnemonic: tc.mnemonic,
+            name: tc.name,
+            direction: te.direction,
+            type: te.type,
+            nodeName: node?.name,
+            nodeMnemonic: node?.mnemonic,
+            arcName: arc ? this.getArcName(arc) : undefined,
+            arcMnemonic: arc?.mnemonic,
+            trainDetectorMnemonic: tc.mnemonic,
+            circulationTrackMnemonic: te.circulationTrackMnemonic,
+            stationingTrackMnemonic: te.stationingTrackMnemonic,
+            auditedTczName: auditedTcz?.name,
+            auditedTczMnemonic: auditedTcz?.mnemonic,
+            auditedNodeName: auditedNode?.name,
+            auditedNodeMnemonic: auditedNode?.mnemonic,
+            pk: tc.pkBegin,
+          });
+        }
+      } else {
+        this.trainDetectors.push({
+          mnemonic: tc.mnemonic,
+          name: tc.name,
+          nodeName: node?.name,
+          nodeMnemonic: node?.mnemonic,
+          arcName: arc ? this.getArcName(arc) : undefined,
+          arcMnemonic: arc?.mnemonic,
+          trainDetectorMnemonic: tc.mnemonic,
+          pk: tc.pkBegin,
+        });      
+      }
     }
     this.trainDetectors.sort(compare);
 
@@ -186,6 +212,14 @@ export class TopologyService {
 
     return [];
 
+  }
+
+  findNodeByMnemo(nodeMnemo: string) {
+    return this.nodes.find(n => n.mnemonic === nodeMnemo);
+  }
+  
+  findNodeById(nodeId: string) {
+    return this.nodes.find(n => n.id === nodeId);
   }
 
   getArcName(arc: any): string {

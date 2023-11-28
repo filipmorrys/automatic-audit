@@ -8,9 +8,11 @@ export interface ITrackCircuit {
     arcName?: string;
     arcMnemonic?: string;
     trainDetectorMnemonic: string;
-    circulationTrackMnemonic: string;
-    stationingTrackMnemonic: string;
+    circulationTrackMnemonic?: string;
+    stationingTrackMnemonic?: string;
     pk?: number;
-    tczName: string;
-    tczMnemonic: string;
+    auditedTczName?: string;
+    auditedTczMnemonic?: string;
+    auditedNodeName?: string;
+    auditedNodeMnemonic?: string;
 }

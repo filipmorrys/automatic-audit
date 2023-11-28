@@ -120,13 +120,13 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
    * @param tc el trackCircuit
    * @returns 
    */
-  matchSearch(tc: any): boolean {
+  matchSearch(tc: ITrackCircuit): boolean {
     let value = this.searcherElement.nativeElement.value;
-    let tczName = tc.tczName ? tc.tczName : '';
+    let tczName = tc.auditedTczName ? tc.auditedTczName : '';
     let nodeName = tc.nodeName ? tc.nodeName : tc.arcName;
     return tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
       || tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
-      || nodeName.toLowerCase().indexOf(value.toLowerCase()) >= 0;
+      || nodeName!.toLowerCase().indexOf(value.toLowerCase()) >= 0;
   }
 
   /**

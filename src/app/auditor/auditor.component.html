@@ -27,7 +27,8 @@
                 <tr>
                     <th>TRAIN DETECTOR</th>
                     <th>EVENT TYPE</th>
-                    <th>TCZ</th>
+                    <th>AUDITED TCZ</th>
+                    <th>AUDITED NODE</th>
                     <th>NODE / ARC</th>
                     <th>KP</th>
                     <th>DIRECTION</th>
@@ -38,7 +39,8 @@
                 <tr *ngFor="let tc of filteredTrainDetectors; let i = index">
                     <td>{{ tc.trainDetectorMnemonic }}</td>
                     <td>{{ tc.type }}</td>
-                    <td>{{ tc.tczName }}</td>
+                    <td>{{ tc.auditedTczName }}</td>
+                    <td>{{ tc.auditedNodeName }}</td>
                     <td>{{ tc.nodeName ? tc.nodeName : tc.arcName }}</td>
                     <td>{{ tc.pk }}</td>
                     <td>{{ tc.direction }}</td>
