@@ -115,6 +115,20 @@
                 }
               ]
             },
+            "tmslocal": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.tmslocal.ts"
+                }
+              ]
+            },
             "estint": {
               "buildOptimizer": false,
               "optimization": false,
@@ -161,7 +175,12 @@
             "irllocal": {
               "browserTarget": "automatic-audit:build:irllocal",
               "proxyConfig": "proxy.conf.irllocal.json"
+            },
+            "tmslocal": {
+              "browserTarget": "automatic-audit:build:tmslocal",
+              "proxyConfig": "proxy.conf.tmslocal.json"
             }
+
           },
           "defaultConfiguration": "tmstmm"
         },
