@@ -4,11 +4,11 @@ import { Observable, from, map } from 'rxjs';
 import { environment } from '../environments/environments';
 import { ITrackCircuit } from './interfaces';
 
-const NODES_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/node/" + environment.topologyVersion;
-const ARCS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/arc/" + environment.topologyVersion;
-const TCZS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/tcz/" + environment.topologyVersion;
-const TOPO_EVENTS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/topologyEvent/" + environment.topologyVersion;
-const TRACK_CIRCUITS_URL = environment.topologyUrl + "/api/topologycachemng/basetopology/trackcircuit/" + environment.topologyVersion;
+const NODES_URL = "/api/topologycachemng/basetopology/node/" + environment.topologyVersion;
+const ARCS_URL = "/api/topologycachemng/basetopology/arc/" + environment.topologyVersion;
+const TCZS_URL = "/api/topologycachemng/basetopology/tcz/" + environment.topologyVersion;
+const TOPO_EVENTS_URL = "/api/topologycachemng/basetopology/topologyEvent/" + environment.topologyVersion;
+const TRACK_CIRCUITS_URL = "/api/topologycachemng/basetopology/trackcircuit/" + environment.topologyVersion;
 
 const EVENT_NODES = "NODES";
 const EVENT_ARCS = "ARCS";

@@ -28,7 +28,7 @@ export class AuditorService {
   sendPosition(circId: string, trackCircuit: string, dir?: string) {
     this.positionMessage.circulationId.id = circId;
     this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = trackCircuit;
-    this.positionMessage.currentStatus.direction = dir ? dir : 'EVEN';
+    this.positionMessage.currentStatus.direction = (!dir || dir === 'BOTH') ? 'EVEN' : dir;
 
     console.log(this.positionMessage);
     this.http.put(POSITION_MESSAGE_URL, this.positionMessage).subscribe(res => console.log(res));

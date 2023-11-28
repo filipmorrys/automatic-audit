@@ -8,6 +8,14 @@
       },
       "changeOrigin": true
     },
+    "/api/topologycachemng": {
+      "target": "https://opefrvirl-prov-topologycachemng-irlprov.apps.k8s.mova.indra.es",
+      "secure": true,
+      "pathRewrite": {
+        "^/api/topologycachemng": ""
+      },
+      "changeOrigin": true
+    },
     "/api": {
       "target": "https://opefrvh60-tmm-activeplanmng-realtime-irltmm.apps.k8s.mova.indra.es",
       "secure": true,

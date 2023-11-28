@@ -6,7 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:tmstmm": "ng build --base-href --configuration tmstmm",
+    "build:tmsint": "ng build --base-href --configuration tmsint",
+    "build:estint": "ng build --base-href --configuration estint",
+    "build:irlint": "ng build --base-href --configuration irlint",
+    "build:irllocal": "ng build --base-href --configuration irllocal",
+    "build:irltmm": "ng build --base-href --configuration irltmm"
   },
   "private": true,
   "dependencies": {

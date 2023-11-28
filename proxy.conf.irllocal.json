@@ -1,0 +1,17 @@
+{
+    "/auth": {
+      "target": "http://opefrvirl-dev-keycloak20-test.apps.k8s.mova.indra.es",
+      "secure": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/auth": ""
+      },
+      "changeOrigin": true
+    },
+    "/api": {
+      "target": "http://localhost:9090",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
