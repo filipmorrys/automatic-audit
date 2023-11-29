@@ -9,11 +9,9 @@
     "changeOrigin": true
   },
   "/api": {
-    "target": "https://opefrvh60-int-activeplanmng-realtime-tmsint.apps.k8s.mova.indra.es",
-    "secure": true,
-    "pathRewrite": {
-      "^/api": ""
-    },
+    "target": "https://opefrvh59-int-topologycachemng-tmsint.apps.k8s.mova.indra.es",
+    "secure": false,
+    "logLevel": "debug",
     "changeOrigin": true
   }
 }

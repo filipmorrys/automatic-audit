@@ -4,5 +4,5 @@ export const environment = {
     realtimeUrl: "https://opefrvh60-int-activeplanmng-realtime-irlint.apps.k8s.mova.indra.es",
     dataaccessUrl: "https://opefrvh60-int-activeplanmng-dataaccess-irlint.apps.k8s.mova.indra.es",
     topologyUrl: "https://opefrvh59-int-topologycachemng-irlint.apps.k8s.mova.indra.es",
-    topologyVersion: "IE_TOPO_GLOBAL_3_1_5"
+    topologyVersion: "IE_TOPO_GLOBAL_3_1_6"
 }
