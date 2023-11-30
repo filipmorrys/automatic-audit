@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subscription, debounceTime, fromEvent } from 'rxjs';
 import { AuditorService } from './auditor.service';
@@ -10,17 +17,16 @@ import { ITrackCircuit } from './interfaces';
 @Component({
   selector: 'app-auditor',
   templateUrl: './auditor.component.html',
-  styleUrls: ['./auditor.component.css']
+  styleUrls: ['./auditor.component.css'],
 })
 export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
-
-  /** 
+  /**
    * Contiene los eventos filtrables que se van a mostrar en la tabla
    */
   filteredTrainDetectors: ITrackCircuit[] = [];
-  /** 
+  /**
    * Identificador de la circulación sobre la que enviamos pisados
-   */  
+   */
   circulationId: string = '';
   /**
    * Nombre de la circulación
@@ -51,37 +57,49 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
   /**
    * Textarea de mensajes
    */
-  @ViewChild("textMessage") textMessage!: ElementRef;
+  @ViewChild('textMessage') textMessage!: ElementRef;
   /**
    * texto asociado al textarea de mensajes
    */
   message = '';
 
-  constructor(private auditor: AuditorService, private topologyService: TopologyService, private activatedRoute: ActivatedRoute) { }
+  /**
+   * Checkbox de filtro de elementos auditados
+   */
+  @ViewChild('auditFilter') auditFilter: any;
+
+  /**
+   * Observable que emite true si se ha activado el filtro de elementos auditados
+   */
+  auditFilter$!: Observable<boolean>;
+
+  constructor(
+    private auditor: AuditorService,
+    private topologyService: TopologyService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   /**
    * Ciclo de vida: On Init
    */
   ngOnInit(): void {
     /**
-     * Cargamos la topología si es que no está cargada ya. La 
-     * subscripción a loadEmmiter nos indica cuando se ha 
+     * Cargamos la topología si es que no está cargada ya. La
+     * subscripción a loadEmmiter nos indica cuando se ha
      * terminado de cargar
      */
     if (!this.topologyService.loaded) {
-      this.topologyService.loadEmmiter.subscribe(
-        ev => {
-          if (ev === 'COMPLETED') {
-            this.filteredTrainDetectors = this.topologyService.trainDetectors;
-          }
+      this.topologyService.loadEmmiter.subscribe((ev) => {
+        if (ev === 'COMPLETED') {
+          this.filteredTrainDetectors = this.topologyService.trainDetectors;
         }
-      );
+      });
       this.topologyService.loadTopology();
     } else {
       this.filteredTrainDetectors = this.topologyService.trainDetectors;
     }
 
-    this.activatedRoute.queryParams.subscribe(params => {
+    this.activatedRoute.queryParams.subscribe((params) => {
       if (params['circulationId']) {
         this.circulationId = params['circulationId'];
       }
@@ -89,7 +107,6 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
         this.circulationName = params['circulationName'];
       }
     });
-
   }
 
   /**
@@ -100,37 +117,55 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       this.searcherSubscription.unsubscribe();
     }
   }
-  
+
   /**
    * Ciclo de vida: After View Init
    */
   ngAfterViewInit(): void {
     console.log('searcherElement', this.searcherElement);
     this.searcher$ = fromEvent(this.searcherElement.nativeElement, 'keyup');
-    this.searcher$.pipe(
-      debounceTime(200)
-    );
-    this.searcherSubscription = this.searcher$.subscribe(ev => {
-      this.filteredTrainDetectors = this.topologyService.trainDetectors.filter(tc => this.matchSearch(tc))
+    this.searcher$.pipe(debounceTime(200));
+    this.searcherSubscription = this.searcher$.subscribe((ev) => {
+      this.filteredTrainDetectors = this.topologyService.trainDetectors.filter(
+        (tc) => this.matchSearch(tc)
+      );
+    });
+
+    this.auditFilter$ = fromEvent(this.auditFilter.nativeElement, 'change');
+    this.auditFilter$.subscribe((ev) => {
+      this.filteredTrainDetectors = this.topologyService.trainDetectors.filter(
+        (tc) => this.matchSearch(tc)
+      );
     });
   }
 
   /**
    * Devuelve true si un trackCircuit cumple la búsqueda del buscador rápido
    * @param tc el trackCircuit
-   * @returns 
+   * @returns
    */
   matchSearch(tc: ITrackCircuit): boolean {
     let value = this.searcherElement.nativeElement.value;
     let tczName = tc.auditedTczName ? tc.auditedTczName : '';
     let nodeName = tc.nodeName ? tc.nodeName : tc.arcName;
-    return tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0
-      || tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0
-      || nodeName!.toLowerCase().indexOf(value.toLowerCase()) >= 0;
+    return (
+      (tc.trainDetectorMnemonic.toLowerCase().indexOf(value.toLowerCase()) >= 0 ||
+        tczName.toLowerCase().indexOf(value.toLowerCase()) >= 0 ||
+        nodeName!.toLowerCase().indexOf(value.toLowerCase()) >= 0) &&
+      this.matchAuditFilter(tc)
+    );
+  }
+
+  matchAuditFilter(tc: ITrackCircuit): boolean {
+    if (this.auditFilter.nativeElement.checked) {
+      return tc.type !== undefined;
+    } else {
+      return true;
+    }
   }
 
   /**
-   * Envía un mensaje de borrado de posición a una circulación. 
+   * Envía un mensaje de borrado de posición a una circulación.
    */
   sendDeletePosition() {
     this.auditor.sendDeletePosition(this.circulationId);
@@ -143,24 +178,30 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   /**
-   * Envía un mensaje de posición a una circulación. 
-   * @param i índice del trackCircuit a enviar. 
+   * Envía un mensaje de posición a una circulación.
+   * @param i índice del trackCircuit a enviar.
    */
   sendPosition(i: number) {
     let tc = this.filteredTrainDetectors[i];
-    this.auditor.sendPosition(this.circulationId, tc.trainDetectorMnemonic, tc.direction);
+    this.auditor.sendPosition(
+      this.circulationId,
+      tc.trainDetectorMnemonic,
+      tc.direction
+    );
   }
 
   /**
    * Establece un mensaje de posición en el textarea y copia el mensaje
    * en el clipboard
-   * @param i 
+   * @param i
    */
   setPosition(i: number) {
     let tc = this.filteredTrainDetectors[i];
     this.positionMessage.circulationId.id = this.circulationId;
-    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId = tc.trainDetectorMnemonic;
-    this.positionMessage.currentStatus.direction = (!tc.direction || tc.direction === 'BOTH') ? 'EVEN' : tc.direction;
+    this.positionMessage.currentStatus.trainDetectors[0].trainDetectorId =
+      tc.trainDetectorMnemonic;
+    this.positionMessage.currentStatus.direction =
+      !tc.direction || tc.direction === 'BOTH' ? 'EVEN' : tc.direction;
 
     this.message = JSON.stringify(this.positionMessage);
     this.copyMessage();
@@ -176,7 +217,5 @@ export class AuditorComponent implements OnInit, AfterViewInit, OnDestroy {
       document.execCommand('copy');
       this.textMessage.nativeElement.setSelectionRange(0, 0);
     }, 100);
-
   }
-
 }

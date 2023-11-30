@@ -77,3 +77,20 @@ button {
     margin-bottom: 2rem;
     margin-left: 1rem;
 }
+
+.table-head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.audit-filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.check-audit-filter {
+    margin-left: 2rem;
+    min-width: 50px;
+}

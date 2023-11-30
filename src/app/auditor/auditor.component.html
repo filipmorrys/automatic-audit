@@ -1,56 +1,86 @@
 <div class="audit-message">
-    <div class="panel-circulation-id">
-        <label for="circulationId">Circulation Id</label>
-        <input type="text" name="circulationId" id="circulationId" [(ngModel)]="circulationId">
-    </div>
-    <div class="panel-circulation-id">
-        <label for="circulationName">Circulation Name</label>
-        <input type="text" name="circulationName" id="circulationName" [(ngModel)]="circulationName" disabled="true">
-    </div>
-    <div class="panel-message">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{ message }}</textarea>
-    </div>
+  <div class="panel-circulation-id">
+    <label for="circulationId">Circulation Id</label>
+    <input
+      type="text"
+      name="circulationId"
+      id="circulationId"
+      [(ngModel)]="circulationId"
+    />
+  </div>
+  <div class="panel-circulation-id">
+    <label for="circulationName">Circulation Name</label>
+    <input
+      type="text"
+      name="circulationName"
+      id="circulationName"
+      [(ngModel)]="circulationName"
+      disabled="true"
+    />
+  </div>
+  <div class="panel-message">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{
+      message
+    }}</textarea>
+  </div>
 </div>
 <div class="delete-position">
-    Borrado de posición:
-    <button (click)="sendDeletePosition()">Send</button>
-    <button (click)="setDeletePosition()">Copy</button>
+  Borrado de posición:
+  <button (click)="sendDeletePosition()">Send</button>
+  <button (click)="setDeletePosition()">Copy</button>
 </div>
 <div class="content">
+  <div class="table-head">
     <div class="search">
-        <input type="text" name="search" id="search" placeholder="Buscar..." #searcher>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Buscar..."
+        #searcher
+      />
     </div>
-    <div class="table-events">
-        <table>
-            <thead>
-                <tr>
-                    <th>TRAIN DETECTOR</th>
-                    <th>EVENT TYPE</th>
-                    <th>AUDITED TCZ</th>
-                    <th>AUDITED NODE</th>
-                    <th>NODE / ARC</th>
-                    <th>KP</th>
-                    <th>DIRECTION</th>
-                    <th>ACTION</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let tc of filteredTrainDetectors; let i = index">
-                    <td>{{ tc.trainDetectorMnemonic }}</td>
-                    <td>{{ tc.type }}</td>
-                    <td>{{ tc.auditedTczName }}</td>
-                    <td>{{ tc.auditedNodeName }}</td>
-                    <td>{{ tc.nodeName ? tc.nodeName : tc.arcName }}</td>
-                    <td>{{ tc.pk }}</td>
-                    <td>{{ tc.direction }}</td>
-                    <td>
-                        <button (click)="sendPosition(i)">Send</button>
-                        <button (click)="setPosition(i)">Copy</button>
-                    </td>
-                </tr>
-            </tbody>
-
-        </table>
+    <div class="audit-filter">
+      <input
+        type="checkbox"
+        class="check-audit-filter"
+        name="auditFilter"
+        id="auditFilter"
+        #auditFilter
+      />
+      <span>Only Audit</span>
     </div>
+  </div>
+  <div class="table-events">
+    <table>
+      <thead>
+        <tr>
+          <th>TRAIN DETECTOR</th>
+          <th>EVENT TYPE</th>
+          <th>AUDITED TCZ</th>
+          <th>AUDITED NODE</th>
+          <th>NODE / ARC</th>
+          <th>KP</th>
+          <th>DIRECTION</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tc of filteredTrainDetectors; let i = index">
+          <td>{{ tc.trainDetectorMnemonic }}</td>
+          <td>{{ tc.type }}</td>
+          <td>{{ tc.auditedTczName }}</td>
+          <td>{{ tc.auditedNodeName }}</td>
+          <td>{{ tc.nodeName ? tc.nodeName : tc.arcName }}</td>
+          <td>{{ tc.pk }}</td>
+          <td>{{ tc.direction }}</td>
+          <td>
+            <button (click)="sendPosition(i)">Send</button>
+            <button (click)="setPosition(i)">Copy</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
