@@ -1,60 +1,86 @@
-<div class="audit-message">
-  <div class="panel-circulation-id">
-    <label for="circulationId">Circulation Id</label>
+<div class="mt-4">
+  <form>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="panel-circulation-id">
+            <label for="circulationId" class="form-label">Circulation Id</label>
+            <input
+              class="form-control"
+              type="text"
+              name="circulationId"
+              id="circulationId"
+              [(ngModel)]="circulationId"
+            />
+          </div>
+          <div class="panel-circulation-id">
+            <label class="form-label" for="circulationName"
+              >Circulation Name</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              name="circulationName"
+              id="circulationName"
+              [(ngModel)]="circulationName"
+              disabled="true"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="form-label me-4">Borrado de posición:</label>
+            <div class="btn-group">
+              <a class="btn btn-outline-dark" (click)="sendDeletePosition()">Send</a>
+              <a class="btn btn-outline-dark" (click)="setDeletePosition()">Copy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="panel-message">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              #textMessage
+              >{{ message }}</textarea
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="d-flex justify-content-between align-items-end mt-4">
+  <div class="search">
     <input
       type="text"
-      name="circulationId"
-      id="circulationId"
-      [(ngModel)]="circulationId"
+      name="search"
+      id="search"
+      placeholder="Buscar..."
+      #searcher
     />
   </div>
-  <div class="panel-circulation-id">
-    <label for="circulationName">Circulation Name</label>
+  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+    <input type="checkbox" class="btn-check" autocomplete="off" name="auditFilter" id="auditFilter" #auditFilter>
+    <label class="btn btn-outline-dark" for="auditFilter">Only Audit</label>  
+  </div>
+  <!-- <div class="audit-filter">
     <input
-      type="text"
-      name="circulationName"
-      id="circulationName"
-      [(ngModel)]="circulationName"
-      disabled="true"
+      type="checkbox"
+      class="check-audit-filter"
+      name="auditFilter"
+      id="auditFilter"
+      #auditFilter
     />
-  </div>
-  <div class="panel-message">
-    <label for="message">Message</label>
-    <textarea name="message" id="message" cols="30" rows="10" #textMessage>{{
-      message
-    }}</textarea>
-  </div>
+    <span>Only Audit</span>
+  </div> -->
 </div>
-<div class="delete-position">
-  Borrado de posición:
-  <button (click)="sendDeletePosition()">Send</button>
-  <button (click)="setDeletePosition()">Copy</button>
-</div>
-<div class="content">
-  <div class="table-head">
-    <div class="search">
-      <input
-        type="text"
-        name="search"
-        id="search"
-        placeholder="Buscar..."
-        #searcher
-      />
-    </div>
-    <div class="audit-filter">
-      <input
-        type="checkbox"
-        class="check-audit-filter"
-        name="auditFilter"
-        id="auditFilter"
-        #auditFilter
-      />
-      <span>Only Audit</span>
-    </div>
-  </div>
+<div class="row">
   <div class="table-events">
-    <table>
-      <thead>
+    <table class="table table-bordered">
+      <thead class="table-dark">
         <tr>
           <th>TRAIN DETECTOR</th>
           <th>EVENT TYPE</th>
@@ -66,7 +92,7 @@
           <th>ACTION</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="table-group-divider">
         <tr *ngFor="let tc of filteredTrainDetectors; let i = index">
           <td>{{ tc.trainDetectorMnemonic }}</td>
           <td>{{ tc.type }}</td>
@@ -76,8 +102,11 @@
           <td>{{ tc.pk }}</td>
           <td>{{ tc.direction }}</td>
           <td>
-            <button (click)="sendPosition(i)">Send</button>
-            <button (click)="setPosition(i)">Copy</button>
+            <div class="btn-group btn-sm">
+              <a class="btn btn-outline-dark" (click)="sendPosition(i)">Send</a>
+              <a class="btn btn-outline-dark" (click)="setPosition(i)">Copy</a>
+            </div>
+
           </td>
         </tr>
       </tbody>
