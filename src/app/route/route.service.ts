@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { environment } from '../environments/environments';
 import { CirculationsService } from '../circulations/circulations.service';
-import { Observable, concat, mergeMap, tap } from 'rxjs';
+import { Observable, concat, forkJoin, mergeMap, tap } from 'rxjs';
 
 const MOVEMENTS_URL =
   '/api/topologycachemng/basetopology/movement/' + environment.topologyVersion;
@@ -57,12 +57,13 @@ export class RouteService {
    * @param circulationId identificador de la circulación
    */
   loadRouteFor(circulationId: string) {
-    concat(
+    // Espera a que se ejecuten todos los observables y luego hacemos el merge
+    forkJoin([
       this.loadCirculation(circulationId),
       this.loadMovements(),
       this.loadTopologyEvents(),
-      this.loadTrackCircuits()
-    ).subscribe((res) => {
+      this.loadTrackCircuits(),
+    ]).subscribe((res) => {
       this.mergeRoute();
     });
   }
@@ -76,49 +77,122 @@ export class RouteService {
     const sections: any[] = [];
     movIds.forEach((movId) => {
       const movement = this.movements.get(movId);
-      sections.push(movement.microLocation.sections);
+      sections.push(...movement.microLocation.sections);
     });
 
-    const overlapedTrackCircuits = this.trackCircuits.filter((tc) =>
-      this.overlaps(tc, sections)
-    );
+    const routeTrackCircuits = this.overlaps(sections);
+    this.removeDuplicates(routeTrackCircuits);
+    console.log(routeTrackCircuits);
   }
 
-  /**
-   * Devuelve true si el circuito de via se solapa con alguna de las secciones del movimiento
-   * @param tc track circuit
-   * @param sections secciones abarcadas por el movimiento
-   * @returns true si el circuito de via se solapa con alguna de las secciones del movimiento
-   */
-  overlaps(tc: any, sections: any[]): boolean {
+  removeDuplicates(routeTrackCircuits: any[]): void {
+    for (let i = 0; i < routeTrackCircuits.length - 1; i++) {
+      const tc = routeTrackCircuits[i];
+      let nextTc = routeTrackCircuits[i + 1];
+      while (tc.id === nextTc.id) {
+        routeTrackCircuits.splice(i + 1, 1);
+        nextTc = routeTrackCircuits[i + 1];
+      }
+    }
+  }
+
+  overlaps(sections: any[]): any[] {
+    const allTcOverlaped: any[] = [];
+    for (const section of sections) {
+      const tcOverlaped = this.trackCircuits.filter((tc) =>
+        this.overlapsTc(tc, section)
+      );
+
+      allTcOverlaped.push(...this.sortTcs(tcOverlaped, section));
+    }
+
+    return allTcOverlaped;
+  }
+
+  sortTcs(tcOverlaped: any[], section: any): any[] {
+    if (tcOverlaped.length === 0) return [];
+
+    if (section.beginCoord < section.endCoord) {
+      tcOverlaped.sort((tc1, tc2) => {
+        const [tc1BeginCoord, tc2BeginCoord] = this.getBeginCoord(
+          tc1,
+          tc2,
+          section
+        );
+        return tc1BeginCoord - tc2BeginCoord;
+      });
+    } else {
+      tcOverlaped.sort((tc1, tc2) => {
+        const [tc1BeginCoord, tc2BeginCoord] = this.getBeginCoord(
+          tc1,
+          tc2,
+          section
+        );
+        return tc2BeginCoord - tc1BeginCoord;
+      });
+    }
+
+    return [...tcOverlaped];
+  }
+
+  getBeginCoord(tc1: any, tc2: any, section: any): number[] {
+    let tc1BeginCoord = 0;
+    if (tc1.microLocationLinear) {
+      tc1BeginCoord = tc1.microLocationLinear.sections.find(
+        (s: any) => s.netElementMnemo === section.netElementMnemo
+      ).beginCoord;
+    } else {
+      tc1BeginCoord = tc1.microLocationArea.sections.find(
+        (s: any) => s.netElementMnemo === section.netElementMnemo
+      ).beginCoord;
+    }
+
+    let tc2BeginCoord = 0;
+    if (tc2.microLocationLinear) {
+      tc2BeginCoord = tc2.microLocationLinear.sections.find(
+        (s: any) => s.netElementMnemo === section.netElementMnemo
+      ).beginCoord;
+    } else {
+      tc2BeginCoord = tc2.microLocationArea.sections.find(
+        (s: any) => s.netElementMnemo === section.netElementMnemo
+      ).beginCoord;
+    }
+
+    return [tc1BeginCoord, tc2BeginCoord];
+  }
+
+  overlapsTc(tc: any, section: any): boolean {
+    let sectionBeginCoord = Math.min(section.beginCoord, section.endCoord);
+    let sectionEndCoord = Math.max(section.beginCoord, section.endCoord);
+
     if (tc.microLocationLinear) {
       const tcSections = tc.microLocationLinear.sections;
+
       for (const tcSection of tcSections) {
-        for (const section of sections) {
-          if (
-            tcSection.id === section.id &&
-            tcSection.beginCood <= section.endCood &&
-            tcSection.endCood >= section.beginCood
-          ) {
-            return true;
-          }
+        let tcBeginCoord = Math.min(tcSection.beginCoord, tcSection.endCoord);
+        let tcEndCoord = Math.max(tcSection.beginCoord, tcSection.endCoord);
+        if (
+          tcSection.netElementMnemo === section.netElementMnemo &&
+          tcBeginCoord < sectionEndCoord &&
+          tcEndCoord > sectionBeginCoord
+        ) {
+          return true;
         }
       }
     } else if (tc.microLocationArea) {
-      const tcAreas = tc.microLocationArea.areas;
+      const tcAreas = tc.microLocationArea.sections;
       for (const tcArea of tcAreas) {
-        for (const section of sections) {
-          if (
-            tcArea.id === section.id &&
-            tcArea.beginCood <= section.endCood &&
-            tcArea.endCood >= section.beginCood
-          ) {
-            return true;
-          }
+        let tcBeginCoord = Math.min(tcArea.beginCoord, tcArea.endCoord);
+        let tcEndCoord = Math.max(tcArea.beginCoord, tcArea.endCoord);
+        if (
+          tcArea.netElementMnemo === section.netElementMnemo &&
+          tcBeginCoord < sectionEndCoord &&
+          tcEndCoord > sectionBeginCoord
+        ) {
+          return true;
         }
       }
     }
-
     return false;
   }
 
@@ -140,6 +214,7 @@ export class RouteService {
 
   private loadMovements(): Observable<any[]> {
     return this.http.get<any[]>(MOVEMENTS_URL).pipe(
+      tap((res) => console.log('Movements loaded', res)),
       tap((res) => {
         for (const movement of res) {
           this.movements.set(movement.id, movement);
@@ -149,20 +224,23 @@ export class RouteService {
   }
 
   private loadTopologyEvents(): Observable<any[]> {
-    return this.http
-      .get<any[]>(TOPO_EVENTS_URL)
-      .pipe(tap((res) => (this.topoEvents = res)));
+    return this.http.get<any[]>(TOPO_EVENTS_URL).pipe(
+      tap((res) => console.log('Topology events loaded', res)),
+      tap((res) => (this.topoEvents = res))
+    );
   }
 
   private loadTrackCircuits(): Observable<any[]> {
-    return this.http
-      .get<any[]>(TRACK_CIRCUITS_URL)
-      .pipe(tap((res) => (this.trackCircuits = res)));
+    return this.http.get<any[]>(TRACK_CIRCUITS_URL).pipe(
+      tap((res) => console.log('Track circuits loaded', res)),
+      tap((res) => (this.trackCircuits = res))
+    );
   }
 
   private loadCirculation(circulationId: string): Observable<any> {
-    return this.circulationsService
-      .getCirculationById(circulationId)
-      .pipe(tap((res) => (this.circulation = res)));
+    return this.circulationsService.getCirculationById(circulationId).pipe(
+      tap((res) => console.log('Circulation loaded', res)),
+      tap((res) => (this.circulation = res))
+    );
   }
 }

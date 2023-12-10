@@ -88,4 +88,10 @@ export class CirculationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.router.navigate(['/auditor'], { queryParams: { 'circulationId': circulationId, 'circulationName': circulationName } });
   }
 
+  routeCirculation(circulationId: string, circulationName: string) {
+    console.log('Route circulacion', circulationId);
+    this.router.navigate(['/route'], { queryParams: { 'circulationId': circulationId, 'circulationName': circulationName } });
+  }
+    
+
 }
