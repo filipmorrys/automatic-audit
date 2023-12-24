@@ -63,7 +63,7 @@ export class RouteService {
       this.loadMovements(),
       this.loadTopologyEvents(),
       this.loadTrackCircuits(),
-    ]).subscribe((res) => {
+    ]).subscribe(([circ, movs, tes, tcs]) => {
       this.mergeRoute();
     });
   }
