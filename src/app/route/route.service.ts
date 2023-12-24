@@ -2,7 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { environment } from '../environments/environments';
 import { CirculationsService } from '../circulations/circulations.service';
-import { Observable, concat, forkJoin, mergeMap, tap } from 'rxjs';
+import { Observable, audit, concat, forkJoin, mergeMap, tap } from 'rxjs';
+import { ITrackCircuit } from '../auditor/interfaces';
 
 const MOVEMENTS_URL =
   '/api/topologycachemng/basetopology/movement/' + environment.topologyVersion;
@@ -12,6 +13,12 @@ const TOPO_EVENTS_URL =
 const TRACK_CIRCUITS_URL =
   '/api/topologycachemng/basetopology/trackcircuit/' +
   environment.topologyVersion;
+const NODES_URL =
+  '/api/topologycachemng/basetopology/node/' + environment.topologyVersion;
+const ARCS_URL =
+  '/api/topologycachemng/basetopology/arc/' + environment.topologyVersion;
+const TCZS_URL =
+  '/api/topologycachemng/basetopology/tcz/' + environment.topologyVersion;
 
 const EVENT_MOVEMENTS = 'MOVEMENTS';
 const EVENT_TOPOLOGY_EVENTS = 'TOPO_EVENTS';
@@ -27,25 +34,33 @@ export class RouteService {
   /**
    * Lista temporal en la que almacenamos los nodos
    */
+  private nodes =  new Map<string, any>();
+  /**
+   * Lista temporal en la que almacenamos los TCZs
+   */
+  private tczs = new Map<string, any>();
+  /**
+   * Lista temporal en la que almacenamos los arcos
+   */
+  private arcs: any[] = [];
+  /**
+   * Lista temporal en la que almacenamos los nodos
+   */
   private movements = new Map<string, any>();
   /**
    * Lista temporal en la que almacenamos los eventos topologicos
    */
-  private topoEvents: any[] = [];
+  private topoEvents = new Map<string, any>();
   /**
    * Lista temporal en la que almacenamos los circuitos de vía
    */
   private trackCircuits: any[] = [];
 
   /**
-   * Todos los eventos de carga emitidos se van almacenando aqui para
-   * saber lo que se ha cargado
+   * Recorrido de circuitos de vía ordenados por los que se recorren en la circulación
    */
-  private eventsReceived: string[] = [];
-  /**
-   * Flag que indica que la topología está cargada.
-   */
-  loaded: boolean = false;
+  public route: ITrackCircuit[] = [];
+
 
   constructor(
     private http: HttpClient,
@@ -63,7 +78,9 @@ export class RouteService {
       this.loadMovements(),
       this.loadTopologyEvents(),
       this.loadTrackCircuits(),
-    ]).subscribe(([circ, movs, tes, tcs]) => {
+      this.loadNodes(),
+      this.loadTczs(),
+    ]).subscribe(([circ, movs, tes, tcs, nodes, tczs]) => {
       this.mergeRoute();
     });
   }
@@ -82,7 +99,33 @@ export class RouteService {
 
     const routeTrackCircuits = this.overlaps(sections);
     this.removeDuplicates(routeTrackCircuits);
-    console.log(routeTrackCircuits);
+    this.completeRoute(routeTrackCircuits);
+  }
+
+  completeRoute(routeTrackCircuits: any[]) {
+    for (const tc of routeTrackCircuits) {
+          const topoEvent = this.topoEvents.get(tc.id);
+          const node = this.nodes.get(tc.elementMacroUUID);
+          const auditedTcz = topoEvent ? this.tczs.get(topoEvent.tcz) : null;
+          const auditedNode = topoEvent ? this.nodes.get(topoEvent.node) : null;
+          this.route.push({
+            mnemonic: tc.mnemonic,        
+            name: tc.name,
+    //        direction?: string;
+            type: topoEvent?.type,
+            nodeName: node?.name,
+            nodeMnemonic: node?.mnemonic,
+            // arcName?: string;
+            // arcMnemonic?: string;
+            trainDetectorMnemonic: tc.mnemonic,
+            circulationTrackMnemonic: topoEvent?.circulationTrackMnemonic,
+            stationingTrackMnemonic: topoEvent?.stationingTrackMnemonic,
+            auditedTczName: auditedTcz?.name,
+            auditedTczMnemonic: auditedTcz?.mnemonic,
+            auditedNodeName: auditedNode?.name,
+            auditedNodeMnemonic: auditedNode?.mnemonic,
+           });
+        }
   }
 
   removeDuplicates(routeTrackCircuits: any[]): void {
@@ -226,7 +269,11 @@ export class RouteService {
   private loadTopologyEvents(): Observable<any[]> {
     return this.http.get<any[]>(TOPO_EVENTS_URL).pipe(
       tap((res) => console.log('Topology events loaded', res)),
-      tap((res) => (this.topoEvents = res))
+      tap((res) => {
+        for (const topoEvent of res) {
+          this.topoEvents.set(topoEvent.trainDetector, topoEvent);
+        }
+      })
     );
   }
 
@@ -241,6 +288,28 @@ export class RouteService {
     return this.circulationsService.getCirculationById(circulationId).pipe(
       tap((res) => console.log('Circulation loaded', res)),
       tap((res) => (this.circulation = res))
+    );
+  }
+
+  private loadNodes(): Observable<any[]> {
+    return this.http.get<any[]>(NODES_URL).pipe(
+      tap((res) => console.log('Nodes loaded', res)),
+      tap((res) => {
+        for (const node of res) {
+          this.nodes.set(node.id, node);
+        }
+      })
+    );
+  }
+
+  private loadTczs(): Observable<any[]> {
+    return this.http.get<any[]>(TCZS_URL).pipe(
+      tap((res) => console.log('TCZs loaded', res)),
+      tap((res) => {
+        for (const tcz of res) {
+          this.tczs.set(tcz.id, tcz);
+        }
+      })
     );
   }
 }

@@ -8,10 +8,12 @@ import { RouteService } from './route.service';
 })
 export class RouteComponent implements OnInit {
   circulationId: string = '';
+  circulationName: string = '';
+  message: string = '';
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private routeService: RouteService
+    protected routeService: RouteService
   ) {}
 
   ngOnInit() {
