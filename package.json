@@ -4,6 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:tmstmm": "ng serve --configuration=tmstmm",
+    "start:tmsint": "ng serve --configuration=tmsint",
+    "start:estint": "ng serve --configuration=estint",
+    "start:irlint": "ng serve --configuration=irlint",
+    "start:irllocal": "ng serve --configuration=irllocal",
+    "start:irltmm": "ng serve --configuration=irltmm",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

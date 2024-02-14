@@ -11,7 +11,7 @@ const TOPO_EVENTS_URL =
   '/api/topologycachemng/basetopology/topologyEvent/' +
   environment.topologyVersion;
 const TRACK_CIRCUITS_URL =
-  '/api/topologycachemng/basetopology/trackcircuit/' +
+  '/api/topologycachemng/basetopology/track-circuit/' +
   environment.topologyVersion;
 const NODES_URL =
   '/api/topologycachemng/basetopology/node/' + environment.topologyVersion;
