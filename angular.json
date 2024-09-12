@@ -87,6 +87,20 @@
                 }
               ]
             },
+            "irlint02": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/environments/environments.ts",
+                  "with": "src/app/environments/environments.irlint02.ts"
+                }
+              ]
+            },
             "irltmm": {
               "buildOptimizer": false,
               "optimization": false,
@@ -171,6 +185,10 @@
             "irlint": {
               "browserTarget": "automatic-audit:build:irlint",
               "proxyConfig": "proxy.conf.irlint.json"
+            },
+            "irlint02": {
+              "browserTarget": "automatic-audit:build:irlint02",
+              "proxyConfig": "proxy.conf.irlint02.json"
             },
             "irllocal": {
               "browserTarget": "automatic-audit:build:irllocal",

@@ -1,6 +1,6 @@
 {
   "/auth": {
-    "target": "https://keycloak20-test.apps.k8s.mova.indra.es",
+    "target": "https://sso.int02.popefrvirl.devmova.net",
     "secure": true,
     "logLevel": "info",
     "pathRewrite": {
@@ -9,7 +9,7 @@
     "changeOrigin": true
   },
   "/api": {
-    "target": "https://opefrvh59-int-topologycachemng-estint.apps.k8s.mova.indra.es",
+    "target": "https://ims.int02.popefrvirl.devmova.net",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true
