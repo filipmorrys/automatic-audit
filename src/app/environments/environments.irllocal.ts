@@ -4,5 +4,5 @@ export const environment = {
     realtimeUrl: "http://localhost:9082",
     dataaccessUrl: "http://localhost:9080",
     topologyUrl: "http://localhost:9090",
-    topologyVersion: "IE_TOPO_GLOBAL_3_1_5"
+    topologyVersion: "IE_TOPO_GLOBAL_3_1_6"
 }

@@ -8,7 +8,7 @@ const NODES_URL = "/api/topologycachemng/basetopology/node/" + environment.topol
 const ARCS_URL = "/api/topologycachemng/basetopology/arc/" + environment.topologyVersion;
 const TCZS_URL = "/api/topologycachemng/basetopology/tcz/" + environment.topologyVersion;
 const TOPO_EVENTS_URL = "/api/topologycachemng/basetopology/topologyEvent/" + environment.topologyVersion;
-const TRACK_CIRCUITS_URL = "/api/topologycachemng/basetopology/trackcircuit/" + environment.topologyVersion;
+const TRACK_CIRCUITS_URL = "/api/topologycachemng/basetopology/track-circuit/" + environment.topologyVersion;
 
 const EVENT_NODES = "NODES";
 const EVENT_ARCS = "ARCS";

@@ -11,11 +11,13 @@ import { AuthGuard } from './guard/auth.guard';
 import { initializeKeycloak } from './keycloak/keycloak-init.factory';
 import { HeaderComponent } from './header/header.component';
 import { CirculationsComponent } from './circulations/circulations.component';
+import { RouteComponent } from './route/route.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'circulations', pathMatch: 'full' },
   { path: 'auditor', canActivate: [ AuthGuard ], component: AuditorComponent },
   { path: 'circulations', canActivate: [ AuthGuard ], component: CirculationsComponent },
+  { path: 'route', canActivate: [ AuthGuard ], component: RouteComponent },
   { path: '**', redirectTo: '' }
 ];
 
@@ -24,7 +26,8 @@ const routes: Routes = [
     AppComponent,
     AuditorComponent,
     HeaderComponent,
-    CirculationsComponent
+    CirculationsComponent,
+    RouteComponent
   ],
   imports: [
     BrowserModule,

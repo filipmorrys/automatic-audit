@@ -31,6 +31,7 @@
                     <td>{{ format(circ.destinationTczDateTime) }}</td>
                     <td>
                         <button class="btn btn-outline-dark btn-sm" (click)="auditCirculation(circ.id, circ.originNumber)">Audit</button>
+                        <button class="btn btn-outline-dark btn-sm" (click)="routeCirculation(circ.id, circ.originNumber)">Route</button>
                     </td>
                 </tr>
             </tbody>
